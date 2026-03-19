@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ask My Digital Double — codedchords.dev</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-0: #f0f0f0;
+      --bg-1: #e7e7e7;
+      --bg-2: #fefefe;
+      --surface: #fefefe;
+      --text: #222226;
+      --text-high-contrast: #313333;
+      --meta: #5b5b65;
+      --primary: #087E96;
+      --primary-hover: #066a7e;
+      --divider: #d7d7d7;
+      --error: #d32f2f;
+      --max-width: 1000px;
+      --content-width: 600px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1f1f1f;
+        --bg-0: #2f2f2f;
+        --bg-1: #3c3c3c;
+        --bg-2: #171717;
+        --surface: #2f2f2f;
+        --text: #D4D4D4;
+        --text-high-contrast: #eceeef;
+        --meta: #B0B0B0;
+        --primary: #91e0ee;
+        --primary-hover: #b8ecf5;
+        --divider: #4a4a4a;
+        --error: #ef5350;
+      }
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 15px;
+    }
+
+    @media (min-width: 600px) {
+      html { font-size: 16.5px; }
+    }
+
+    @media (min-width: 960px) {
+      html { font-size: 20px; }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.9;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--content-width);
+      padding: 3rem 1rem;
+      flex: 1;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        max-width: 400px;
+        padding: 2rem 16px;
+      }
+    }
+
+    @media (max-width: 300px) {
+      .container {
+        max-width: 200px;
+      }
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 550;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+
+    header h1 a {
+      color: var(--text-high-contrast);
+      text-decoration: none;
+    }
+
+    header h1 a:hover {
+      color: var(--primary);
+    }
+
+    header p {
+      color: var(--meta);
+      font-size: 0.8rem;
+      line-height: 1.7;
+    }
+
+    .input-area {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .input-area {
+        flex-direction: column;
+      }
+    }
+
+    .input-area textarea {
+      flex: 1;
+      padding: 0.6rem 0.8rem;
+      border: 1px solid var(--divider);
+      border-radius: 4px;
+      background: var(--surface);
+      color: var(--text);
+      font-size: 0.85rem;
+      font-family: inherit;
+      line-height: 1.6;
+      resize: vertical;
+      min-height: 3rem;
+      max-height: 8rem;
+    }
+
+    .input-area textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+
+    .input-area button {
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 4px;
+      background: var(--primary);
+      color: var(--bg);
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      white-space: nowrap;
+      align-self: flex-end;
+      transition: background 0.2s;
+    }
+
+    @media (max-width: 600px) {
+      .input-area button {
+        align-self: stretch;
+      }
+    }
+
+    .input-area button:hover:not(:disabled) {
+      background: var(--primary-hover);
+    }
+
+    .input-area button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .char-count {
+      text-align: right;
+      font-size: 0.65rem;
+      color: var(--meta);
+      margin-bottom: 1.5rem;
+    }
+
+    .char-count.over {
+      color: var(--error);
+    }
+
+    #result {
+      display: none;
+    }
+
+    .answer-box {
+      background: var(--bg-0);
+      border-left: 0.3rem solid var(--primary);
+      padding: 1rem 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .answer-box p {
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-size: 0.85rem;
+      line-height: 2;
+    }
+
+    .sources {
+      margin-top: 1rem;
+    }
+
+    .sources h3 {
+      font-size: 0.75rem;
+      color: var(--meta);
+      margin-bottom: 0.4rem;
+      font-weight: 550;
+    }
+
+    .sources ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .sources a {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 0.8rem;
+    }
+
+    .sources a:hover {
+      text-decoration: underline;
+    }
+
+    .loading {
+      display: none;
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    .loading.visible {
+      display: block;
+    }
+
+    .spinner {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 2px solid var(--divider);
+      border-top-color: var(--primary);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .loading p {
+      color: var(--meta);
+      font-size: 0.8rem;
+      margin-top: 0.5rem;
+    }
+
+    .error-msg {
+      display: none;
+      border-left: 0.3rem solid var(--error);
+      background: var(--bg-0);
+      padding: 0.8rem 1rem;
+      color: var(--error);
+      font-size: 0.8rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      color: var(--meta);
+      font-size: 0.7rem;
+      max-width: var(--content-width);
+      margin: 0 auto;
+      border-top: 1px solid var(--divider);
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    footer .disclaimer {
+      margin-top: 0.5rem;
+      font-size: 0.6rem;
+      line-height: 1.6;
+      opacity: 0.7;
+    }
+
+    ::selection {
+      background: var(--primary);
+      color: var(--bg);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="https://codedchords.dev/">Ask My Digital Double</a></h1>
+      <p>私のデジタル分身(bot)がなんでもお答えいたします。一応私の記事に基づいて回答しますが、たかだか個人ブログの文書量なので平気で嘘をつきます。</p>
+    </header>
+
+    <div class="input-area">
+      <textarea id="question" placeholder="質問を入力…" rows="2" maxlength="500"></textarea>
+      <button id="askBtn" type="button">質問する</button>
+    </div>
+    <div class="char-count" id="charCount">0 / 500</div>
+
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <p>考え中…</p>
+    </div>
+
+    <div class="error-msg" id="error"></div>
+
+    <div id="result">
+      <div class="answer-box">
+        <p id="answer"></p>
+      </div>
+      <div class="sources" id="sourcesArea">
+        <h3>参考記事</h3>
+        <ul id="sourcesList"></ul>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Powered by Cloudflare Workers AI — <a href="https://codedchords.dev/">codedchords.dev</a></p>
+    <p class="disclaimer">免責事項: このボットは AI（Llama 3.3 70B）がブログ記事を参考に生成した回答を返します。著者本人の発言ではありません。回答の正確性は保証されず、事実と異なる内容を含む場合があります。重要な判断には使用しないでください。</p>
+  </footer>
+
+  <script>
+    const questionEl = document.getElementById("question");
+    const askBtn = document.getElementById("askBtn");
+    const loadingEl = document.getElementById("loading");
+    const errorEl = document.getElementById("error");
+    const resultEl = document.getElementById("result");
+    const answerEl = document.getElementById("answer");
+    const sourcesArea = document.getElementById("sourcesArea");
+    const sourcesList = document.getElementById("sourcesList");
+    const charCount = document.getElementById("charCount");
+
+    let cooldown = false;
+    let mode = "ask"; // "ask" or "clear"
+
+    function setMode(newMode) {
+      mode = newMode;
+      if (mode === "clear") {
+        askBtn.textContent = "クリア";
+      } else {
+        askBtn.textContent = "質問する";
+      }
+    }
+
+    questionEl.addEventListener("input", () => {
+      const len = questionEl.value.length;
+      charCount.textContent = `${len} / 500`;
+      charCount.classList.toggle("over", len > 500);
+    });
+
+    questionEl.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && !e.shiftKey && !e.isComposing) {
+        e.preventDefault();
+        askBtn.click();
+      }
+    });
+
+    askBtn.addEventListener("click", async () => {
+      if (mode === "clear") {
+        questionEl.value = "";
+        charCount.textContent = "0 / 500";
+        charCount.classList.remove("over");
+        resultEl.style.display = "none";
+        errorEl.style.display = "none";
+        setMode("ask");
+        questionEl.focus();
+        return;
+      }
+
+      const question = questionEl.value.trim();
+      if (!question) return;
+      if (question.length > 500) return;
+      if (cooldown) return;
+
+      cooldown = true;
+      askBtn.disabled = true;
+
+      resultEl.style.display = "none";
+      errorEl.style.display = "none";
+      loadingEl.classList.add("visible");
+
+      try {
+        const res = await fetch("/api/ask", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ question }),
+        });
+
+        const data = await res.json();
+
+        if (!res.ok) {
+          throw new Error(data.error || "エラーが発生しました");
+        }
+
+        answerEl.textContent = data.answer;
+
+        sourcesList.innerHTML = "";
+        if (data.sources && data.sources.length > 0) {
+          sourcesArea.style.display = "";
+          for (const src of data.sources) {
+            const li = document.createElement("li");
+            const a = document.createElement("a");
+            a.href = src.url;
+            a.target = "_blank";
+            a.rel = "noopener";
+            a.textContent = src.title;
+            li.appendChild(a);
+            sourcesList.appendChild(li);
+          }
+        } else {
+          sourcesArea.style.display = "none";
+        }
+
+        resultEl.style.display = "block";
+        setMode("clear");
+      } catch (err) {
+        errorEl.textContent = err.message;
+        errorEl.style.display = "block";
+        setMode("clear");
+      } finally {
+        loadingEl.classList.remove("visible");
+        cooldown = false;
+        askBtn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
