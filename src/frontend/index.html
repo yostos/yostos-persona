@@ -99,15 +99,6 @@
       margin-bottom: 0.75rem;
     }
 
-    header h1 a {
-      color: var(--text-high-contrast);
-      text-decoration: none;
-    }
-
-    header h1 a:hover {
-      color: var(--primary);
-    }
-
     header p {
       color: var(--meta);
       font-size: 0.8rem;
@@ -290,6 +281,20 @@
       text-decoration: underline;
     }
 
+    .back-nav {
+      margin-bottom: 1rem;
+    }
+
+    .back-nav a {
+      color: var(--meta);
+      text-decoration: none;
+      font-size: 0.75rem;
+    }
+
+    .back-nav a:hover {
+      color: var(--primary);
+    }
+
     footer .disclaimer {
       margin-top: 0.5rem;
       font-size: 0.6rem;
@@ -305,8 +310,11 @@
 </head>
 <body>
   <div class="container">
+    <nav class="back-nav">
+      <a href="https://codedchords.dev/">&larr; codedchords.dev</a>
+    </nav>
     <header>
-      <h1><a href="https://codedchords.dev/">Ask My Digital Double</a></h1>
+      <h1>Ask My Digital Double</h1>
       <p>私のデジタル分身(bot)がなんでもお答えいたします。一応私の記事に基づいて回答しますが、たかだか個人ブログの文書量なので平気で嘘をつきます。</p>
     </header>
 
@@ -352,6 +360,7 @@
 
     let cooldown = false;
     let mode = "ask"; // "ask" or "clear"
+    let composing = false;
 
     function setMode(newMode) {
       mode = newMode;
@@ -368,8 +377,11 @@
       charCount.classList.toggle("over", len > 500);
     });
 
+    questionEl.addEventListener("compositionstart", () => { composing = true; });
+    questionEl.addEventListener("compositionend", () => { composing = false; });
+
     questionEl.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" && !e.shiftKey && !e.isComposing) {
+      if (e.key === "Enter" && !e.shiftKey && !e.isComposing && !composing) {
         e.preventDefault();
         askBtn.click();
       }

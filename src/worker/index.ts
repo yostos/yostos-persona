@@ -2,6 +2,20 @@ import type { Env, AskRequest, AskResponse, ErrorResponse } from "./types";
 import { retrieveChunks } from "./rag";
 import { buildSystemPrompt, extractSources } from "./prompt";
 
+const RATE_LIMIT_MAX = 10; // 最大リクエスト数
+const RATE_LIMIT_WINDOW = 60; // ウィンドウ（秒）
+
+async function checkRateLimit(ip: string, kv: KVNamespace): Promise<boolean> {
+  const key = `rl:${ip}`;
+  const val = await kv.get(key);
+  const count = val ? parseInt(val, 10) : 0;
+  if (count >= RATE_LIMIT_MAX) {
+    return false;
+  }
+  await kv.put(key, String(count + 1), { expirationTtl: RATE_LIMIT_WINDOW });
+  return true;
+}
+
 const ALLOWED_ORIGINS = [
   "https://codedchords.dev",
   "https://ask.codedchords.dev",
@@ -49,6 +63,17 @@ export default {
 } satisfies ExportedHandler<Env>;
 
 async function handleAsk(request: Request, env: Env, origin: string | null): Promise<Response> {
+  // Rate limiting by IP
+  const ip = request.headers.get("CF-Connecting-IP") || "unknown";
+  const allowed = await checkRateLimit(ip, env.RATE_LIMIT);
+  if (!allowed) {
+    return jsonResponse(
+      { error: "リクエストが多すぎます。しばらく待ってからお試しください", code: "RATE_LIMITED" },
+      429,
+      origin,
+    );
+  }
+
   let body: AskRequest;
   try {
     body = await request.json<AskRequest>();
