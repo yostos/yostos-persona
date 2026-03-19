@@ -2,6 +2,7 @@ export interface Env {
   AI: Ai;
   VECTORIZE: VectorizeIndex;
   ASSETS: Fetcher;
+  RATE_LIMIT: KVNamespace;
 }
 
 export interface ArticleMeta {

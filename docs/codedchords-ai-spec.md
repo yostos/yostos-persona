@@ -267,6 +267,7 @@ npx wrangler vectorize create yostos-persona --dimensions 1024 --metric cosine
 - Workers Scripts > Edit
 - Workers AI > Edit
 - Vectorize > Edit
+- Workers KV Storage > Edit
 
 **Zone 権限（codedchords.dev）:**
 - Workers Routes > Edit
@@ -288,8 +289,12 @@ npm run ingest
 npx wrangler deploy
 ```
 
-- Worker ID: `505abfb9-9770-476a-a871-127f73f26a54`
 - カスタムドメイン `ask.codedchords.dev` が自動設定された
+
+### GitHub Push（2026-03-19）
+
+- コミット: `250a112` — `feat: AI Q&A system for ask.codedchords.dev`
+- タグ: `v0.5.0`
 
 ## 検証済み事項
 
@@ -307,5 +312,5 @@ npx wrangler deploy
 - ~~ホスティング方式（Workers Route vs サブドメイン）の決定~~ → サブドメイン方式に決定
 - KV キャッシュの必要性とキャッシュキーの設計
 - フロントエンドのデザイン（tabi テーマとの整合性）
-- レート制限（悪用防止）
+- ~~レート制限（悪用防止）~~ → KV ベースで IP あたり 60 秒間 10 リクエストに制限
 - LLM の max_tokens 最適値（回答品質とコストのバランス）
