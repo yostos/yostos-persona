@@ -6,6 +6,9 @@ on:
       - "content/**"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   ingest-deploy:
     runs-on: ubuntu-latest
