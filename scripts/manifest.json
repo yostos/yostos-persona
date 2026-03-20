@@ -231,8 +231,8 @@
       "chunk_count": 4
     },
     "kimetsu-no-yaiba": {
-      "hash": "b7753ea21ee2c7b5e80ffd47e40839e7",
-      "last_processed": "2026-03-19T15:19:08.879Z",
+      "hash": "a975e6f6b9a1fe3f7cb3b4564fd1d607",
+      "last_processed": "2026-03-20T00:18:54.390Z",
       "chunk_count": 1
     },
     "new-years-card": {
@@ -396,8 +396,8 @@
       "chunk_count": 1
     },
     "salmon-run": {
-      "hash": "21188600158f4666b0f0bf248ded4571",
-      "last_processed": "2026-03-19T15:19:08.066Z",
+      "hash": "25fa1592f766d93c4472ee5757c69dc3",
+      "last_processed": "2026-03-20T00:18:55.091Z",
       "chunk_count": 1
     },
     "textlint-introduction": {
@@ -1156,9 +1156,9 @@
       "chunk_count": 5
     },
     "claude-code-entry": {
-      "hash": "9120ab877cedf380dbd7550f2cb3e174",
-      "last_processed": "2026-03-19T15:19:09.605Z",
-      "chunk_count": 2
+      "hash": "35be7b11fa553ac0b9ecd8254e57b641",
+      "last_processed": "2026-03-20T00:18:55.906Z",
+      "chunk_count": 8
     },
     "claude-code-jrnl-context-handoff": {
       "hash": "be49c60dd4f23cd8e04128cca8fcbb71",
@@ -1414,6 +1414,11 @@
       "hash": "1cbd967d82f6bcdc4047e897eda061fe",
       "last_processed": "2026-03-19T12:23:54.428Z",
       "chunk_count": 3
+    },
+    "ask-my-digital-double": {
+      "hash": "8570f0abd1b10b7612e4fb3c327ee512",
+      "last_processed": "2026-03-20T00:18:58.035Z",
+      "chunk_count": 11
     }
   }
 }
