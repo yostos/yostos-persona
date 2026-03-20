@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.5.1 (2026-03-20)
+
+### Fixed
+
+- ブログ記事URLにファイルパスから年月（YYYY/MM）を抽出して含めるよう修正 (#1)
+  - Before: `/blog/contentful/`
+  - After: `/blog/2025/03/contentful/`
+
 ## v0.5.0 (2026-03-19)
 
 ### Added
