@@ -91,7 +91,7 @@ function cleanText(text: string): string {
 }
 
 // --- Chunking ---
-function chunkByHeading(body: string, slug: string, frontMatter: FrontMatter, section: string): { id: string; text: string; meta: ArticleMeta }[] {
+function chunkByHeading(body: string, slug: string, frontMatter: FrontMatter, section: string, filePath: string): { id: string; text: string; meta: ArticleMeta }[] {
   const cleaned = cleanText(body);
   const chunks: { id: string; text: string; meta: ArticleMeta }[] = [];
 
@@ -102,7 +102,11 @@ function chunkByHeading(body: string, slug: string, frontMatter: FrontMatter, se
   // Determine the URL based on section
   let url: string;
   if (section === "blog") {
-    url = `https://codedchords.dev/blog/${slug}/`;
+    // Extract YYYY/MM from file path (content/blog/YYYY/MM/slug/index.md)
+    const rel = path.relative(CONTENT_DIR, filePath);
+    const parts = rel.split(path.sep);
+    const datePath = parts.length >= 4 ? `${parts[1]}/${parts[2]}/` : "";
+    url = `https://codedchords.dev/blog/${datePath}${slug}/`;
   } else if (section === "about") {
     url = `https://codedchords.dev/about/`;
   } else if (section === "music") {
@@ -288,7 +292,7 @@ async function main() {
   if (DRY_RUN) {
     // Show chunks for each article
     for (const article of toProcess) {
-      const chunks = chunkByHeading(article.body, article.slug, article.frontMatter, article.section);
+      const chunks = chunkByHeading(article.body, article.slug, article.frontMatter, article.section, article.filePath);
       console.log(`\n--- ${article.slug} (${chunks.length} chunks) ---`);
       for (const chunk of chunks) {
         console.log(`  [${chunk.id}] ${chunk.meta.section} (${chunk.text.length} chars)`);
@@ -319,7 +323,7 @@ async function main() {
   // Process changed/new articles
   const BATCH_SIZE = 10; // embed up to 10 texts at a time
   for (const article of toProcess) {
-    const chunks = chunkByHeading(article.body, article.slug, article.frontMatter, article.section);
+    const chunks = chunkByHeading(article.body, article.slug, article.frontMatter, article.section, article.filePath);
     if (chunks.length === 0) {
       console.log(`Skipping ${article.slug}: no chunks`);
       continue;
