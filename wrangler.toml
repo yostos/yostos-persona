@@ -20,3 +20,8 @@ id = "a37f9b9c0d2e4f72a4d23219dfe50488"
 [assets]
 directory = "src/frontend"
 binding = "ASSETS"
+
+[observability]
+[observability.logs]
+enabled = true
+invocation_logs = true
