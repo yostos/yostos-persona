@@ -2,10 +2,10 @@ name: Ingest & Deploy
 
 on:
   push:
+    branches:
+      - main
     paths:
       - "content/**"
-    tags-ignore:
-      - "**"
   workflow_dispatch:
 
 permissions:
