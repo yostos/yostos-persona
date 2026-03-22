@@ -231,8 +231,8 @@
       "chunk_count": 4
     },
     "kimetsu-no-yaiba": {
-      "hash": "b7753ea21ee2c7b5e80ffd47e40839e7",
-      "last_processed": "2026-03-21T12:46:39.045Z",
+      "hash": "a975e6f6b9a1fe3f7cb3b4564fd1d607",
+      "last_processed": "2026-03-22T23:40:41.725Z",
       "chunk_count": 1
     },
     "new-years-card": {
@@ -311,8 +311,8 @@
       "chunk_count": 1
     },
     "simplifier-mk2": {
-      "hash": "8fbabdf4418df38d0093103f96f0b515",
-      "last_processed": "2026-03-19T12:20:17.542Z",
+      "hash": "7f5ce1ce54371aca696d700d2bee5d92",
+      "last_processed": "2026-03-22T23:40:43.406Z",
       "chunk_count": 9
     },
     "the-information-gap-on-usaid": {
@@ -396,8 +396,8 @@
       "chunk_count": 1
     },
     "salmon-run": {
-      "hash": "21188600158f4666b0f0bf248ded4571",
-      "last_processed": "2026-03-21T12:46:37.415Z",
+      "hash": "25fa1592f766d93c4472ee5757c69dc3",
+      "last_processed": "2026-03-22T23:40:44.772Z",
       "chunk_count": 1
     },
     "textlint-introduction": {
@@ -1156,9 +1156,9 @@
       "chunk_count": 5
     },
     "claude-code-entry": {
-      "hash": "9120ab877cedf380dbd7550f2cb3e174",
-      "last_processed": "2026-03-21T12:46:43.245Z",
-      "chunk_count": 2
+      "hash": "35be7b11fa553ac0b9ecd8254e57b641",
+      "last_processed": "2026-03-22T23:40:46.663Z",
+      "chunk_count": 8
     },
     "claude-code-jrnl-context-handoff": {
       "hash": "be49c60dd4f23cd8e04128cca8fcbb71",
@@ -1429,6 +1429,16 @@
       "hash": "d5a094e9f9fe9d86a9a2228883303f63",
       "last_processed": "2026-03-21T12:46:42.104Z",
       "chunk_count": 4
+    },
+    "amber-drift": {
+      "hash": "df2dbdce774a24015c601cc20b03e6c7",
+      "last_processed": "2026-03-22T23:40:47.399Z",
+      "chunk_count": 1
+    },
+    "focus-before-reality": {
+      "hash": "18ac0a08eba98aedf273c4b15e54c8d7",
+      "last_processed": "2026-03-22T23:40:48.126Z",
+      "chunk_count": 1
     }
   }
 }
