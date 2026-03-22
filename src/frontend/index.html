@@ -1,467 +1,499 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ask My Digital Double — codedchords.dev</title>
-  <style>
-    :root {
-      --bg: #ffffff;
-      --bg-0: #f0f0f0;
-      --bg-1: #e7e7e7;
-      --bg-2: #fefefe;
-      --surface: #fefefe;
-      --text: #222226;
-      --text-high-contrast: #313333;
-      --meta: #5b5b65;
-      --primary: #087E96;
-      --primary-hover: #066a7e;
-      --divider: #d7d7d7;
-      --error: #d32f2f;
-      --max-width: 1000px;
-      --content-width: 600px;
-    }
-
-    @media (prefers-color-scheme: dark) {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ask My Digital Double — codedchords.dev</title>
+    <style>
       :root {
-        --bg: #1f1f1f;
-        --bg-0: #2f2f2f;
-        --bg-1: #3c3c3c;
-        --bg-2: #171717;
-        --surface: #2f2f2f;
-        --text: #D4D4D4;
-        --text-high-contrast: #eceeef;
-        --meta: #B0B0B0;
-        --primary: #91e0ee;
-        --primary-hover: #b8ecf5;
-        --divider: #4a4a4a;
-        --error: #ef5350;
+        --bg: #ffffff;
+        --bg-0: #f0f0f0;
+        --bg-1: #e7e7e7;
+        --bg-2: #fefefe;
+        --surface: #fefefe;
+        --text: #222226;
+        --text-high-contrast: #313333;
+        --meta: #5b5b65;
+        --primary: #087e96;
+        --primary-hover: #066a7e;
+        --divider: #d7d7d7;
+        --error: #d32f2f;
+        --max-width: 1000px;
+        --content-width: 600px;
       }
-    }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      font-size: 15px;
-    }
-
-    @media (min-width: 600px) {
-      html { font-size: 16.5px; }
-    }
-
-    @media (min-width: 960px) {
-      html { font-size: 20px; }
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.9;
-      min-height: 100dvh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .container {
-      width: 100%;
-      max-width: var(--content-width);
-      padding: 3rem 1rem;
-      flex: 1;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        max-width: 400px;
-        padding: 2rem 16px;
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #1f1f1f;
+          --bg-0: #2f2f2f;
+          --bg-1: #3c3c3c;
+          --bg-2: #171717;
+          --surface: #2f2f2f;
+          --text: #d4d4d4;
+          --text-high-contrast: #eceeef;
+          --meta: #b0b0b0;
+          --primary: #91e0ee;
+          --primary-hover: #b8ecf5;
+          --divider: #4a4a4a;
+          --error: #ef5350;
+        }
       }
-    }
 
-    @media (max-width: 300px) {
-      .container {
-        max-width: 200px;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
-    }
 
-    header {
-      margin-bottom: 2.5rem;
-    }
+      html {
+        font-size: 15px;
+      }
 
-    header h1 {
-      font-size: 1.5rem;
-      font-weight: 550;
-      line-height: 1.2;
-      margin-bottom: 0.75rem;
-    }
+      @media (min-width: 600px) {
+        html {
+          font-size: 16.5px;
+        }
+      }
 
-    header p {
-      color: var(--meta);
-      font-size: 0.8rem;
-      line-height: 1.7;
-    }
+      @media (min-width: 960px) {
+        html {
+          font-size: 20px;
+        }
+      }
 
-    .input-area {
-      display: flex;
-      gap: 0.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    @media (max-width: 600px) {
-      .input-area {
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN",
+          "Noto Sans JP", "Segoe UI", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.9;
+        min-height: 100dvh;
+        display: flex;
         flex-direction: column;
+        align-items: center;
       }
-    }
 
-    .input-area textarea {
-      flex: 1;
-      padding: 0.6rem 0.8rem;
-      border: 1px solid var(--divider);
-      border-radius: 4px;
-      background: var(--surface);
-      color: var(--text);
-      font-size: 0.85rem;
-      font-family: inherit;
-      line-height: 1.6;
-      resize: vertical;
-      min-height: 3rem;
-      max-height: 8rem;
-    }
+      .container {
+        width: 100%;
+        max-width: var(--content-width);
+        padding: 3rem 1rem;
+        flex: 1;
+      }
 
-    .input-area textarea:focus {
-      outline: none;
-      border-color: var(--primary);
-    }
+      @media (max-width: 600px) {
+        .container {
+          max-width: 400px;
+          padding: 2rem 16px;
+        }
+      }
 
-    .input-area button {
-      padding: 0.6rem 1.2rem;
-      border: none;
-      border-radius: 4px;
-      background: var(--primary);
-      color: var(--bg);
-      font-size: 0.85rem;
-      font-weight: 500;
-      cursor: pointer;
-      white-space: nowrap;
-      align-self: flex-end;
-      transition: background 0.2s;
-    }
+      @media (max-width: 300px) {
+        .container {
+          max-width: 200px;
+        }
+      }
 
-    @media (max-width: 600px) {
+      header {
+        margin-bottom: 2.5rem;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+        font-weight: 550;
+        line-height: 1.2;
+        margin-bottom: 0.75rem;
+      }
+
+      header p {
+        color: var(--meta);
+        font-size: 0.8rem;
+        line-height: 1.7;
+      }
+
+      .input-area {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      @media (max-width: 600px) {
+        .input-area {
+          flex-direction: column;
+        }
+      }
+
+      .input-area textarea {
+        flex: 1;
+        padding: 0.6rem 0.8rem;
+        border: 1px solid var(--divider);
+        border-radius: 4px;
+        background: var(--surface);
+        color: var(--text);
+        font-size: 0.85rem;
+        font-family: inherit;
+        line-height: 1.6;
+        resize: vertical;
+        min-height: 3rem;
+        max-height: 8rem;
+      }
+
+      .input-area textarea:focus {
+        outline: none;
+        border-color: var(--primary);
+      }
+
       .input-area button {
-        align-self: stretch;
+        padding: 0.6rem 1.2rem;
+        border: none;
+        border-radius: 4px;
+        background: var(--primary);
+        color: var(--bg);
+        font-size: 0.85rem;
+        font-weight: 500;
+        cursor: pointer;
+        white-space: nowrap;
+        align-self: flex-end;
+        transition: background 0.2s;
       }
-    }
 
-    .input-area button:hover:not(:disabled) {
-      background: var(--primary-hover);
-    }
+      @media (max-width: 600px) {
+        .input-area button {
+          align-self: stretch;
+        }
+      }
 
-    .input-area button:disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
-    }
+      .input-area button:hover:not(:disabled) {
+        background: var(--primary-hover);
+      }
 
-    .char-count {
-      text-align: right;
-      font-size: 0.65rem;
-      color: var(--meta);
-      margin-bottom: 1.5rem;
-    }
+      .input-area button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
 
-    .char-count.over {
-      color: var(--error);
-    }
+      .char-count {
+        text-align: right;
+        font-size: 0.65rem;
+        color: var(--meta);
+        margin-bottom: 1.5rem;
+      }
 
-    #result {
-      display: none;
-    }
+      .char-count.over {
+        color: var(--error);
+      }
 
-    .answer-box {
-      background: var(--bg-0);
-      border-left: 0.3rem solid var(--primary);
-      padding: 1rem 1.2rem;
-      margin-bottom: 1rem;
-    }
+      #result {
+        display: none;
+      }
 
-    .answer-box p {
-      white-space: pre-wrap;
-      word-break: break-word;
-      font-size: 0.85rem;
-      line-height: 2;
-    }
+      .answer-box {
+        background: var(--bg-0);
+        border-left: 0.3rem solid var(--primary);
+        padding: 1rem 1.2rem;
+        margin-bottom: 1rem;
+      }
 
-    .sources {
-      margin-top: 1rem;
-    }
+      .answer-box p {
+        white-space: pre-wrap;
+        word-break: break-word;
+        font-size: 0.85rem;
+        line-height: 2;
+      }
 
-    .sources h3 {
-      font-size: 0.75rem;
-      color: var(--meta);
-      margin-bottom: 0.4rem;
-      font-weight: 550;
-    }
+      .sources {
+        margin-top: 1rem;
+      }
 
-    .sources ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
-    }
+      .sources h3 {
+        font-size: 0.75rem;
+        color: var(--meta);
+        margin-bottom: 0.4rem;
+        font-weight: 550;
+      }
 
-    .sources a {
-      color: var(--primary);
-      text-decoration: none;
-      font-size: 0.8rem;
-    }
+      .sources ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+      }
 
-    .sources a:hover {
-      text-decoration: underline;
-    }
+      .sources a {
+        color: var(--primary);
+        text-decoration: none;
+        font-size: 0.8rem;
+      }
 
-    .loading {
-      display: none;
-      text-align: center;
-      padding: 2rem 0;
-    }
+      .sources a:hover {
+        text-decoration: underline;
+      }
 
-    .loading.visible {
-      display: block;
-    }
+      .loading {
+        display: none;
+        text-align: center;
+        padding: 2rem 0;
+      }
 
-    .spinner {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      border: 2px solid var(--divider);
-      border-top-color: var(--primary);
-      border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-    }
+      .loading.visible {
+        display: block;
+      }
 
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
+      .spinner {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 2px solid var(--divider);
+        border-top-color: var(--primary);
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+      }
 
-    .loading p {
-      color: var(--meta);
-      font-size: 0.8rem;
-      margin-top: 0.5rem;
-    }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
 
-    .error-msg {
-      display: none;
-      border-left: 0.3rem solid var(--error);
-      background: var(--bg-0);
-      padding: 0.8rem 1rem;
-      color: var(--error);
-      font-size: 0.8rem;
-    }
+      .loading p {
+        color: var(--meta);
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+      }
 
-    footer {
-      text-align: center;
-      padding: 1.5rem 1rem;
-      color: var(--meta);
-      font-size: 0.7rem;
-      max-width: var(--content-width);
-      margin: 0 auto;
-      border-top: 1px solid var(--divider);
-    }
+      .error-msg {
+        display: none;
+        border-left: 0.3rem solid var(--error);
+        background: var(--bg-0);
+        padding: 0.8rem 1rem;
+        color: var(--error);
+        font-size: 0.8rem;
+      }
 
-    footer a {
-      color: var(--primary);
-      text-decoration: none;
-    }
+      footer {
+        text-align: center;
+        padding: 1.5rem 1rem;
+        color: var(--meta);
+        font-size: 0.7rem;
+        max-width: var(--content-width);
+        margin: 0 auto;
+        border-top: 1px solid var(--divider);
+      }
 
-    footer a:hover {
-      text-decoration: underline;
-    }
+      footer a {
+        color: var(--primary);
+        text-decoration: none;
+      }
 
-    .back-nav {
-      margin-bottom: 1rem;
-    }
+      footer a:hover {
+        text-decoration: underline;
+      }
 
-    .back-nav a {
-      color: var(--meta);
-      text-decoration: none;
-      font-size: 0.75rem;
-    }
+      .back-nav {
+        margin-bottom: 1rem;
+      }
 
-    .back-nav a:hover {
-      color: var(--primary);
-    }
+      .back-nav a {
+        color: var(--meta);
+        text-decoration: none;
+        font-size: 0.75rem;
+      }
 
-    footer .disclaimer {
-      margin-top: 0.5rem;
-      font-size: 0.6rem;
-      line-height: 1.6;
-      opacity: 0.7;
-    }
+      .back-nav a:hover {
+        color: var(--primary);
+      }
 
-    ::selection {
-      background: var(--primary);
-      color: var(--bg);
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <nav class="back-nav">
-      <a href="https://codedchords.dev/">&larr; codedchords.dev</a>
-    </nav>
-    <header>
-      <h1>Ask My Digital Double</h1>
-      <p>私のデジタル分身(bot)がなんでもお答えいたします。一応私の記事に基づいて回答しますが、たかだか個人ブログの文書量なので平気で嘘をつきます。</p>
-    </header>
+      .disclaimer {
+        font-size: 0.6rem;
+        line-height: 1.6;
+        color: var(--meta);
+        opacity: 0.7;
+        margin-bottom: 1rem;
+      }
 
-    <div class="input-area">
-      <textarea id="question" placeholder="質問を入力…" rows="2" maxlength="500"></textarea>
-      <button id="askBtn" type="button">質問する</button>
-    </div>
-    <div class="char-count" id="charCount">0 / 500</div>
+      ::selection {
+        background: var(--primary);
+        color: var(--bg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="back-nav">
+        <a href="https://codedchords.dev/">&larr; codedchords.dev</a>
+      </nav>
+      <header>
+        <h1>Ask My Digital Double</h1>
+        <p>
+          私のデジタル分身(bot)がなんでもお答えいたします。一応私の記事に基づいて回答しますが、たかだか個人ブログの文書をベースとした学習量なので平気で嘘をつきます。
+        </p>
+      </header>
 
-    <div class="loading" id="loading">
-      <div class="spinner"></div>
-      <p>考え中…</p>
-    </div>
+      <p class="disclaimer">
+        免責事項: このボットは AI（Llama 3.3
+        70B）がブログ記事を参考に生成した回答を返します。著者本人の発言ではありません。回答の正確性は保証されず、事実と異なる内容を含む場合があります。重要な判断には使用しないでください。
+      </p>
 
-    <div class="error-msg" id="error"></div>
-
-    <div id="result">
-      <div class="answer-box">
-        <p id="answer"></p>
+      <div class="input-area">
+        <textarea
+          id="question"
+          placeholder="質問を入力…"
+          rows="2"
+          maxlength="500"
+        ></textarea>
+        <button id="askBtn" type="button">質問する</button>
       </div>
-      <div class="sources" id="sourcesArea">
-        <h3>参考記事</h3>
-        <ul id="sourcesList"></ul>
+      <div class="char-count" id="charCount">0 / 500</div>
+
+      <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>考え中…</p>
+      </div>
+
+      <div class="error-msg" id="error"></div>
+
+      <div id="result">
+        <div class="answer-box">
+          <p id="answer"></p>
+        </div>
+        <div class="sources" id="sourcesArea">
+          <h3>参考記事</h3>
+          <ul id="sourcesList"></ul>
+        </div>
       </div>
     </div>
-  </div>
 
-  <footer>
-    <p>Powered by Cloudflare Workers AI — <a href="https://codedchords.dev/">codedchords.dev</a></p>
-    <p class="disclaimer">免責事項: このボットは AI（Llama 3.3 70B）がブログ記事を参考に生成した回答を返します。著者本人の発言ではありません。回答の正確性は保証されず、事実と異なる内容を含む場合があります。重要な判断には使用しないでください。</p>
-  </footer>
+    <footer>
+      <p>
+        &copy; 2026 Toshiyuki Yoshida &bull; Content licensed under
+        <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>
+      </p>
+    </footer>
 
-  <script>
-    const questionEl = document.getElementById("question");
-    const askBtn = document.getElementById("askBtn");
-    const loadingEl = document.getElementById("loading");
-    const errorEl = document.getElementById("error");
-    const resultEl = document.getElementById("result");
-    const answerEl = document.getElementById("answer");
-    const sourcesArea = document.getElementById("sourcesArea");
-    const sourcesList = document.getElementById("sourcesList");
-    const charCount = document.getElementById("charCount");
+    <script>
+      const questionEl = document.getElementById("question");
+      const askBtn = document.getElementById("askBtn");
+      const loadingEl = document.getElementById("loading");
+      const errorEl = document.getElementById("error");
+      const resultEl = document.getElementById("result");
+      const answerEl = document.getElementById("answer");
+      const sourcesArea = document.getElementById("sourcesArea");
+      const sourcesList = document.getElementById("sourcesList");
+      const charCount = document.getElementById("charCount");
 
-    let cooldown = false;
-    let mode = "ask"; // "ask" or "clear"
-    let composing = false;
+      let cooldown = false;
+      let mode = "ask"; // "ask" or "clear"
+      let composing = false;
 
-    function setMode(newMode) {
-      mode = newMode;
-      if (mode === "clear") {
-        askBtn.textContent = "クリア";
-      } else {
-        askBtn.textContent = "質問する";
+      function setMode(newMode) {
+        mode = newMode;
+        if (mode === "clear") {
+          askBtn.textContent = "クリア";
+        } else {
+          askBtn.textContent = "質問する";
+        }
       }
-    }
 
-    questionEl.addEventListener("input", () => {
-      const len = questionEl.value.length;
-      charCount.textContent = `${len} / 500`;
-      charCount.classList.toggle("over", len > 500);
-    });
+      questionEl.addEventListener("input", () => {
+        const len = questionEl.value.length;
+        charCount.textContent = `${len} / 500`;
+        charCount.classList.toggle("over", len > 500);
+      });
 
-    questionEl.addEventListener("compositionstart", () => { composing = true; });
-    questionEl.addEventListener("compositionend", () => { composing = false; });
+      questionEl.addEventListener("compositionstart", () => {
+        composing = true;
+      });
+      questionEl.addEventListener("compositionend", () => {
+        composing = false;
+      });
 
-    questionEl.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" && !e.shiftKey && !e.isComposing && !composing) {
-        e.preventDefault();
-        askBtn.click();
-      }
-    });
+      questionEl.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" && !e.shiftKey && !e.isComposing && !composing) {
+          e.preventDefault();
+          askBtn.click();
+        }
+      });
 
-    askBtn.addEventListener("click", async () => {
-      if (mode === "clear") {
-        questionEl.value = "";
-        charCount.textContent = "0 / 500";
-        charCount.classList.remove("over");
+      askBtn.addEventListener("click", async () => {
+        if (mode === "clear") {
+          questionEl.value = "";
+          charCount.textContent = "0 / 500";
+          charCount.classList.remove("over");
+          resultEl.style.display = "none";
+          errorEl.style.display = "none";
+          setMode("ask");
+          questionEl.focus();
+          return;
+        }
+
+        const question = questionEl.value.trim();
+        if (!question) return;
+        if (question.length > 500) return;
+        if (cooldown) return;
+
+        cooldown = true;
+        askBtn.disabled = true;
+
         resultEl.style.display = "none";
         errorEl.style.display = "none";
-        setMode("ask");
-        questionEl.focus();
-        return;
-      }
+        loadingEl.classList.add("visible");
 
-      const question = questionEl.value.trim();
-      if (!question) return;
-      if (question.length > 500) return;
-      if (cooldown) return;
+        try {
+          const res = await fetch("/api/ask", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ question }),
+          });
 
-      cooldown = true;
-      askBtn.disabled = true;
+          const data = await res.json();
 
-      resultEl.style.display = "none";
-      errorEl.style.display = "none";
-      loadingEl.classList.add("visible");
-
-      try {
-        const res = await fetch("/api/ask", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ question }),
-        });
-
-        const data = await res.json();
-
-        if (!res.ok) {
-          throw new Error(data.error || "エラーが発生しました");
-        }
-
-        answerEl.textContent = data.answer;
-
-        sourcesList.innerHTML = "";
-        if (data.sources && data.sources.length > 0) {
-          sourcesArea.style.display = "";
-          for (const src of data.sources) {
-            const li = document.createElement("li");
-            const a = document.createElement("a");
-            a.href = src.url;
-            a.target = "_blank";
-            a.rel = "noopener";
-            a.textContent = src.title;
-            li.appendChild(a);
-            sourcesList.appendChild(li);
+          if (!res.ok) {
+            throw new Error(data.error || "エラーが発生しました");
           }
-        } else {
-          sourcesArea.style.display = "none";
-        }
 
-        resultEl.style.display = "block";
-        setMode("clear");
-      } catch (err) {
-        errorEl.textContent = err.message;
-        errorEl.style.display = "block";
-        setMode("clear");
-      } finally {
-        loadingEl.classList.remove("visible");
-        cooldown = false;
-        askBtn.disabled = false;
-      }
-    });
-  </script>
-  <script>
-    window.goatcounter = {
-        path: function(p) { return 'ask' + p }
-    }
-  </script>
-  <script data-goatcounter="https://yostos.goatcounter.com/count"
-          async src="//gc.zgo.at/count.js"></script>
-</body>
+          answerEl.textContent = data.answer;
+
+          sourcesList.innerHTML = "";
+          if (data.sources && data.sources.length > 0) {
+            sourcesArea.style.display = "";
+            for (const src of data.sources) {
+              const li = document.createElement("li");
+              const a = document.createElement("a");
+              a.href = src.url;
+              a.target = "_blank";
+              a.rel = "noopener";
+              a.textContent = src.title;
+              li.appendChild(a);
+              sourcesList.appendChild(li);
+            }
+          } else {
+            sourcesArea.style.display = "none";
+          }
+
+          resultEl.style.display = "block";
+          setMode("clear");
+        } catch (err) {
+          errorEl.textContent = err.message;
+          errorEl.style.display = "block";
+          setMode("clear");
+        } finally {
+          loadingEl.classList.remove("visible");
+          cooldown = false;
+          askBtn.disabled = false;
+        }
+      });
+    </script>
+    <script>
+      window.goatcounter = {
+        path: function (p) {
+          return "ask" + p;
+        },
+      };
+    </script>
+    <script
+      data-goatcounter="https://yostos.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
+  </body>
 </html>
