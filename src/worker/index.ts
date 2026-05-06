@@ -99,7 +99,7 @@ async function handleAsk(request: Request, env: Env, origin: string | null): Pro
     }));
 
     // Build prompt and call LLM
-    const systemPrompt = buildSystemPrompt(contexts);
+    const systemPrompt = buildSystemPrompt(env.SYSTEM_PROMPT, contexts);
 
     const llmResult = await env.AI.run("@cf/meta/llama-3.3-70b-instruct-fp8-fast", {
       messages: [

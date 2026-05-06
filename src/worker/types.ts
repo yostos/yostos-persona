@@ -3,6 +3,7 @@ export interface Env {
   VECTORIZE: VectorizeIndex;
   ASSETS: Fetcher;
   RATE_LIMIT: KVNamespace;
+  SYSTEM_PROMPT: string;
 }
 
 export interface ArticleMeta {

@@ -35,7 +35,7 @@
 │   ├── worker/             # Cloudflare Workers
 │   │   ├── index.ts        # エントリポイント（POST /api/ask）
 │   │   ├── rag.ts          # Vectorize 検索ロジック
-│   │   ├── prompt.ts       # システムプロンプト定義
+│   │   ├── prompt.ts       # システムプロンプト組み立て（ペルソナは env.SYSTEM_PROMPT から）
 │   │   └── types.ts        # 型定義
 │   └── frontend/           # チャット UI（静的 HTML）
 │       └── index.html
@@ -61,10 +61,25 @@
 npm install
 ```
 
+### Persona ファイル
+
+ペルソナ・回答ルールは秘匿情報として `.persona`（リポジトリルート、Git 管理対象外）に保存する。
+このファイルは `npm run dev`（ローカル）と Cloudflare Secrets（本番）の両方の入力源となる。
+
+新規環境では、既存の `.persona` を安全な経路（パスワードマネージャ等）経由で取得して配置すること。
+
+### Cloudflare Secrets への反映
+
+```bash
+wrangler secret put SYSTEM_PROMPT < .persona
+```
+
+`.persona` を更新したら、上記コマンドで本番 Workers にも反映する。
+
 ### Development
 
 ```bash
-npm run dev          # ローカル開発サーバー起動
+npm run dev          # ローカル開発サーバー起動（.persona を読み込む）
 ```
 
 ### Ingest（記事の取り込み）

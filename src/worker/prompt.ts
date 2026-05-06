@@ -1,17 +1,14 @@
 import type { Source } from "./types";
 
-const PERSONA = `<REDACTED:persona>`;
-
-const RULES = `<REDACTED:rules>`;
-
-export function buildSystemPrompt(contexts: { text: string; meta: { title: string; url: string } }[]): string {
+export function buildSystemPrompt(
+  systemPrompt: string,
+  contexts: { text: string; meta: { title: string; url: string } }[],
+): string {
   const references = contexts
     .map((c, i) => `### 参考${i + 1}: ${c.meta.title}\nURL: ${c.meta.url}\n\n${c.text}`)
     .join("\n\n");
 
-  return `${PERSONA}
-
-${RULES}
+  return `${systemPrompt}
 
 ## 参考情報（ブログ記事から取得）
 ${references || "（該当する参考情報はありません）"}`;
