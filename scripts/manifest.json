@@ -146,8 +146,8 @@
       "chunk_count": 1
     },
     "Modern-messaging-apps": {
-      "hash": "b7ab82f4b0f0291c368d0db4f11cfc00",
-      "last_processed": "2026-03-19T12:19:48.267Z",
+      "hash": "0844f0dfa4aefda45c273ea3242ded22",
+      "last_processed": "2026-05-06T23:26:33.646Z",
       "chunk_count": 2
     },
     "Re-certification-SAA": {
@@ -186,8 +186,8 @@
       "chunk_count": 1
     },
     "beer-oclock-botton-shop": {
-      "hash": "a793dd114587fc44afc5e62f66b1b85c",
-      "last_processed": "2026-03-19T12:19:54.982Z",
+      "hash": "8a6527d611cbcd1822c2290ea4ebda47",
+      "last_processed": "2026-05-06T23:26:36.478Z",
       "chunk_count": 1
     },
     "bread-espresso-and": {
@@ -231,8 +231,8 @@
       "chunk_count": 4
     },
     "kimetsu-no-yaiba": {
-      "hash": "a975e6f6b9a1fe3f7cb3b4564fd1d607",
-      "last_processed": "2026-03-22T23:40:41.725Z",
+      "hash": "b7753ea21ee2c7b5e80ffd47e40839e7",
+      "last_processed": "2026-05-06T23:26:56.628Z",
       "chunk_count": 1
     },
     "new-years-card": {
@@ -346,8 +346,8 @@
       "chunk_count": 4
     },
     "Portfolio-site-for-engieer": {
-      "hash": "43cdbe77252381689c0a2bd705c5bec6",
-      "last_processed": "2026-03-19T12:20:24.083Z",
+      "hash": "7ffa5c94129cdce58170ce0189074a03",
+      "last_processed": "2026-05-06T23:26:38.941Z",
       "chunk_count": 8
     },
     "Teacher-Mikami": {
@@ -381,8 +381,8 @@
       "chunk_count": 7
     },
     "mcp-integration-of-claude-code-inkdrop": {
-      "hash": "2627968b5aa15a07b31db5765b2e58c3",
-      "last_processed": "2026-03-19T12:20:31.588Z",
+      "hash": "2cdc7f30164f74dc498f4443f8bf3300",
+      "last_processed": "2026-05-06T23:26:41.522Z",
       "chunk_count": 7
     },
     "nhk-ibm": {
@@ -396,8 +396,8 @@
       "chunk_count": 1
     },
     "salmon-run": {
-      "hash": "25fa1592f766d93c4472ee5757c69dc3",
-      "last_processed": "2026-03-22T23:40:44.772Z",
+      "hash": "21188600158f4666b0f0bf248ded4571",
+      "last_processed": "2026-05-06T23:26:49.055Z",
       "chunk_count": 1
     },
     "textlint-introduction": {
@@ -481,8 +481,8 @@
       "chunk_count": 2
     },
     "prompt-engineering": {
-      "hash": "c9947c4a38c899f180122ed5fe4ccd07",
-      "last_processed": "2026-03-19T12:20:50.769Z",
+      "hash": "5daddb983ad78fe0f1f4dbd2cb2ab79c",
+      "last_processed": "2026-05-06T23:26:44.138Z",
       "chunk_count": 5
     },
     "soundcloud-api-changed": {
@@ -626,8 +626,8 @@
       "chunk_count": 3
     },
     "fwritedown": {
-      "hash": "e54decee8ef63b2881f7ecb37901c6cc",
-      "last_processed": "2026-03-19T12:21:15.893Z",
+      "hash": "bd313bc72aeb8e97397a8d03271ad660",
+      "last_processed": "2026-05-06T23:26:46.416Z",
       "chunk_count": 3
     },
     "hell": {
@@ -666,8 +666,8 @@
       "chunk_count": 4
     },
     "vulnerability-check": {
-      "hash": "55319897d493b992aa76578ddd6cab81",
-      "last_processed": "2026-03-19T12:21:24.381Z",
+      "hash": "633dd0292f5f6359c49d3c29933281d4",
+      "last_processed": "2026-05-06T23:26:51.518Z",
       "chunk_count": 10
     },
     "workman-windcore": {
@@ -771,8 +771,8 @@
       "chunk_count": 1
     },
     "korg-trs": {
-      "hash": "ad91c8fb5742642af7b6ac998a618ae7",
-      "last_processed": "2026-03-19T12:21:42.407Z",
+      "hash": "d5406322e28aee52681069fd9140c611",
+      "last_processed": "2026-05-06T23:26:53.757Z",
       "chunk_count": 5
     },
     "late-summer-greetings": {
@@ -1156,9 +1156,9 @@
       "chunk_count": 5
     },
     "claude-code-entry": {
-      "hash": "35be7b11fa553ac0b9ecd8254e57b641",
-      "last_processed": "2026-03-22T23:40:46.663Z",
-      "chunk_count": 8
+      "hash": "9120ab877cedf380dbd7550f2cb3e174",
+      "last_processed": "2026-05-06T23:27:54.117Z",
+      "chunk_count": 2
     },
     "claude-code-jrnl-context-handoff": {
       "hash": "be49c60dd4f23cd8e04128cca8fcbb71",
@@ -1281,9 +1281,9 @@
       "chunk_count": 7
     },
     "ai-haves-nots": {
-      "hash": "e4e08381f045d482bacbeea7cc031f15",
-      "last_processed": "2026-03-19T12:23:25.731Z",
-      "chunk_count": 6
+      "hash": "071e613048ed95a46d4645df9ed84006",
+      "last_processed": "2026-05-06T23:27:00.214Z",
+      "chunk_count": 7
     },
     "anthropic": {
       "hash": "7902b26c5706a9b6dfd3e022c6e5f6a2",
@@ -1416,8 +1416,8 @@
       "chunk_count": 3
     },
     "ask-my-digital-double": {
-      "hash": "6ac9213baedb4119a1b530e56e7d16f1",
-      "last_processed": "2026-03-21T12:46:40.433Z",
+      "hash": "2dbecae90b6b05655eb49a22f7435fd4",
+      "last_processed": "2026-05-06T23:27:04.493Z",
       "chunk_count": 10
     },
     "joi-ito": {
@@ -1439,6 +1439,166 @@
       "hash": "18ac0a08eba98aedf273c4b15e54c8d7",
       "last_processed": "2026-03-22T23:40:48.126Z",
       "chunk_count": 1
+    },
+    "26-splat": {
+      "hash": "ba3534678bbe1d66c2bf359df0d1b5fd",
+      "last_processed": "2026-05-06T23:26:57.776Z",
+      "chunk_count": 1
+    },
+    "ai-workforce-design-paradox": {
+      "hash": "05650082ea57ff68c98e20e7829d6c97",
+      "last_processed": "2026-05-06T23:27:01.980Z",
+      "chunk_count": 7
+    },
+    "cloudflare-free-security": {
+      "hash": "27facc23d554df1eb5d5d13ec52faba7",
+      "last_processed": "2026-05-06T23:27:05.943Z",
+      "chunk_count": 7
+    },
+    "dirty-work": {
+      "hash": "d6980e8c4f47f255607c1aba391adfc2",
+      "last_processed": "2026-05-06T23:27:07.188Z",
+      "chunk_count": 1
+    },
+    "kotan": {
+      "hash": "102dfdf96df6d8fd34164d4fcf360cf4",
+      "last_processed": "2026-05-06T23:27:08.443Z",
+      "chunk_count": 4
+    },
+    "transparent-divide": {
+      "hash": "82c269b686d8e195bda5f4c269e6f82a",
+      "last_processed": "2026-05-06T23:27:10.004Z",
+      "chunk_count": 1
+    },
+    "aws-ai-twilight": {
+      "hash": "772c2b9c6e09220da10feae0c2ea299b",
+      "last_processed": "2026-05-06T23:27:11.275Z",
+      "chunk_count": 5
+    },
+    "boule": {
+      "hash": "02f96db5bab27da8e46012109b7120e4",
+      "last_processed": "2026-05-06T23:27:12.941Z",
+      "chunk_count": 5
+    },
+    "ciac-review": {
+      "hash": "08fcdd09bc2321b88a3af9edce182b3b",
+      "last_processed": "2026-05-06T23:27:14.572Z",
+      "chunk_count": 10
+    },
+    "cloud2-0": {
+      "hash": "653c411aa62732c0ca7b9cb2472cae1c",
+      "last_processed": "2026-05-06T23:27:16.086Z",
+      "chunk_count": 7
+    },
+    "complementary": {
+      "hash": "56a5c6a593e2397f4db2c860036520b9",
+      "last_processed": "2026-05-06T23:27:17.348Z",
+      "chunk_count": 1
+    },
+    "dalle3-to-gpt-image-mini": {
+      "hash": "2d9407546f35a14fc36d0d5d32f51cbf",
+      "last_processed": "2026-05-06T23:27:18.679Z",
+      "chunk_count": 4
+    },
+    "days-we-left-behind": {
+      "hash": "2177873fd535f679cb0ab536a8d63bb2",
+      "last_processed": "2026-05-06T23:27:19.875Z",
+      "chunk_count": 1
+    },
+    "dji-avata2": {
+      "hash": "2e2c7ba08a7ec97cdb8f43462dfdc6b6",
+      "last_processed": "2026-05-06T23:27:21.081Z",
+      "chunk_count": 3
+    },
+    "dji-avata2-cinematic": {
+      "hash": "6aa59be8ead81c54e1288abcf9cf0ea2",
+      "last_processed": "2026-05-06T23:27:23.844Z",
+      "chunk_count": 12
+    },
+    "01-paradigm-shift": {
+      "hash": "15074ac8e219b0ad05b9fa2a58b24fa0",
+      "last_processed": "2026-05-06T23:27:25.120Z",
+      "chunk_count": 5
+    },
+    "02-unnecessary-patterns": {
+      "hash": "f25e7a295fb43a8ad6eaac73c4db2bcd",
+      "last_processed": "2026-05-06T23:27:26.579Z",
+      "chunk_count": 5
+    },
+    "03-useful-patterns": {
+      "hash": "f5e7dd317baa98515e1ee483c19e4b30",
+      "last_processed": "2026-05-06T23:27:28.456Z",
+      "chunk_count": 5
+    },
+    "04-essential-patterns": {
+      "hash": "0d349e99ab5100fc7b7d90c883c14cb5",
+      "last_processed": "2026-05-06T23:27:30.074Z",
+      "chunk_count": 4
+    },
+    "josephine": {
+      "hash": "8a439abf5471df69500abc1a45a192a5",
+      "last_processed": "2026-05-06T23:27:36.230Z",
+      "chunk_count": 1
+    },
+    "kinoene": {
+      "hash": "206c506ce5176fb4a25e1acf86604682",
+      "last_processed": "2026-05-06T23:27:37.441Z",
+      "chunk_count": 1
+    },
+    "liftoff": {
+      "hash": "4e16dd2622c40a1d3d7c1e6ff9912b9c",
+      "last_processed": "2026-05-06T23:27:38.680Z",
+      "chunk_count": 4
+    },
+    "missed-project-hail-mary": {
+      "hash": "7b7c20eb1afcbf51307ad49177e17520",
+      "last_processed": "2026-05-06T23:27:40.090Z",
+      "chunk_count": 4
+    },
+    "muratagawa": {
+      "hash": "713018599a22156303311144b9ac1b5e",
+      "last_processed": "2026-05-06T23:27:41.327Z",
+      "chunk_count": 1
+    },
+    "no-coding-anymore": {
+      "hash": "2ff15ea96acd200c6915c876632ce414",
+      "last_processed": "2026-05-06T23:27:42.635Z",
+      "chunk_count": 4
+    },
+    "project-hail-mary": {
+      "hash": "33d877a98bda7277b3d71f506992bc31",
+      "last_processed": "2026-05-06T23:27:44.079Z",
+      "chunk_count": 7
+    },
+    "rclone": {
+      "hash": "976f2c07aaac343543f1ddcafc0978c5",
+      "last_processed": "2026-05-06T23:27:45.685Z",
+      "chunk_count": 9
+    },
+    "sample-code-calendar": {
+      "hash": "84ab2a64986f86b6ff6024c0dba0985e",
+      "last_processed": "2026-05-06T23:27:46.776Z",
+      "chunk_count": 1
+    },
+    "start-dash-dual": {
+      "hash": "9ffa0ada6b5e901f9522bb9d64faa4c5",
+      "last_processed": "2026-05-06T23:27:47.952Z",
+      "chunk_count": 1
+    },
+    "tangle": {
+      "hash": "043cfd7bdc95462e2846d04dfd5345b6",
+      "last_processed": "2026-05-06T23:27:49.118Z",
+      "chunk_count": 1
+    },
+    "weathered": {
+      "hash": "33705db0c1f43146e5e7077cbc79af17",
+      "last_processed": "2026-05-06T23:27:50.325Z",
+      "chunk_count": 1
+    },
+    "sougu-mamori": {
+      "hash": "6d3d166089c1834e5722c9ab64a0527a",
+      "last_processed": "2026-05-06T23:27:51.622Z",
+      "chunk_count": 5
     }
   }
 }
