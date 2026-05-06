@@ -104,21 +104,17 @@ Llama 3.3 70B Instruct FP8 Fast（`@cf/meta/llama-3.3-70b-instruct-fp8-fast`）
 
 ## システムプロンプト設計
 
+システムプロンプトは以下の構成で組み立てる：
+
 ```
-<REDACTED:persona-line>
-
-[キャラクタ設定: プロフィール、専門分野、口調の指定]
-
-## 回答ルール
-<REDACTED>
-<REDACTED>
-<REDACTED>
-<REDACTED>
-<REDACTED>
+[ペルソナ・回答ルール（.persona から注入。リポジトリ外で管理）]
 
 ## 参考情報（ブログ記事から取得）
 {Vectorize から取得したチャンク群をここに挿入}
 ```
+
+`.persona` の内容は Cloudflare Secrets (`SYSTEM_PROMPT`) として本番に反映する。
+具体的なペルソナ定義は秘匿情報のため本ドキュメントには記載しない。
 
 ## API 設計
 
