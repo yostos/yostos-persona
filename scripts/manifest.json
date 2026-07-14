@@ -146,8 +146,8 @@
       "chunk_count": 1
     },
     "Modern-messaging-apps": {
-      "hash": "0844f0dfa4aefda45c273ea3242ded22",
-      "last_processed": "2026-05-07T21:42:40.464Z",
+      "hash": "fe5f7043674721888a0f041104252e77",
+      "last_processed": "2026-07-14T01:30:46.901Z",
       "chunk_count": 2
     },
     "Re-certification-SAA": {
@@ -231,8 +231,8 @@
       "chunk_count": 4
     },
     "kimetsu-no-yaiba": {
-      "hash": "a975e6f6b9a1fe3f7cb3b4564fd1d607",
-      "last_processed": "2026-06-09T11:53:04.464Z",
+      "hash": "b7753ea21ee2c7b5e80ffd47e40839e7",
+      "last_processed": "2026-07-14T01:30:56.030Z",
       "chunk_count": 1
     },
     "new-years-card": {
@@ -316,8 +316,8 @@
       "chunk_count": 9
     },
     "the-information-gap-on-usaid": {
-      "hash": "5e1bc29b8ce86586e0eca7de74fd365e",
-      "last_processed": "2026-05-07T21:43:22.805Z",
+      "hash": "e616fa4fc10eb44a3c9832b81022bfe2",
+      "last_processed": "2026-07-14T01:30:48.831Z",
       "chunk_count": 1
     },
     "CVE-2025-29927": {
@@ -396,8 +396,8 @@
       "chunk_count": 1
     },
     "salmon-run": {
-      "hash": "25fa1592f766d93c4472ee5757c69dc3",
-      "last_processed": "2026-06-09T11:53:05.546Z",
+      "hash": "21188600158f4666b0f0bf248ded4571",
+      "last_processed": "2026-07-14T01:30:52.951Z",
       "chunk_count": 1
     },
     "textlint-introduction": {
@@ -421,8 +421,8 @@
       "chunk_count": 3
     },
     "anthropic-max-plan": {
-      "hash": "63f399f739e53843a5a455a4b3d5206e",
-      "last_processed": "2026-05-07T21:43:56.461Z",
+      "hash": "d82a296a475640b7e2f90608a1c2a032",
+      "last_processed": "2026-07-14T01:30:50.926Z",
       "chunk_count": 3
     },
     "aws-mcp-servers": {
@@ -871,8 +871,8 @@
       "chunk_count": 4
     },
     "takanaka": {
-      "hash": "0ca795a1786089f6d55bac93f123506a",
-      "last_processed": "2026-06-09T11:53:24.020Z",
+      "hash": "a9cb0319560390fa8fcfcdc5412a4be1",
+      "last_processed": "2026-07-14T01:30:57.950Z",
       "chunk_count": 1
     },
     "typepad-shutdown-end-of-blog-era": {
@@ -1016,8 +1016,8 @@
       "chunk_count": 6
     },
     "keikokubashi": {
-      "hash": "715b39cf108446c3302395a39afa7ac6",
-      "last_processed": "2026-05-07T21:46:31.428Z",
+      "hash": "d1313377c6487f619772ab1c6baabf30",
+      "last_processed": "2026-07-14T01:30:59.794Z",
       "chunk_count": 1
     },
     "magi-claude-code-plugin": {
@@ -1156,9 +1156,9 @@
       "chunk_count": 5
     },
     "claude-code-entry": {
-      "hash": "35be7b11fa553ac0b9ecd8254e57b641",
-      "last_processed": "2026-06-09T11:53:06.545Z",
-      "chunk_count": 8
+      "hash": "9120ab877cedf380dbd7550f2cb3e174",
+      "last_processed": "2026-07-14T01:31:30.539Z",
+      "chunk_count": 2
     },
     "claude-code-jrnl-context-handoff": {
       "hash": "be49c60dd4f23cd8e04128cca8fcbb71",
@@ -1709,6 +1709,116 @@
       "hash": "42b7c84b863c2e6d1244b2077203368d",
       "last_processed": "2026-06-09T11:53:28.494Z",
       "chunk_count": 7
+    },
+    "awamata-waterfall": {
+      "hash": "7dbe26381db3aaf58ac6b64a7992f452",
+      "last_processed": "2026-07-14T01:31:00.932Z",
+      "chunk_count": 4
+    },
+    "bark": {
+      "hash": "cb244ae4d0858102e0b995f417fedf5a",
+      "last_processed": "2026-07-14T01:31:02.419Z",
+      "chunk_count": 1
+    },
+    "big-run": {
+      "hash": "6744e4d198bb722d3a2e1c77251c6612",
+      "last_processed": "2026-07-14T01:31:03.421Z",
+      "chunk_count": 1
+    },
+    "black-or-white": {
+      "hash": "64332c54719037b610f6716698de946b",
+      "last_processed": "2026-07-14T01:31:04.692Z",
+      "chunk_count": 1
+    },
+    "ciac-review-2025": {
+      "hash": "a3e25e5b4b54bd3d3360654eb7e21744",
+      "last_processed": "2026-07-14T01:31:05.681Z",
+      "chunk_count": 7
+    },
+    "darktable": {
+      "hash": "82cc4290124bb34c7b96a334250e329f",
+      "last_processed": "2026-07-14T01:31:06.865Z",
+      "chunk_count": 4
+    },
+    "ethnic-unity-and-progress-promotion-law": {
+      "hash": "be3e480793cda6b70b13d94c10538db4",
+      "last_processed": "2026-07-14T01:31:08.097Z",
+      "chunk_count": 8
+    },
+    "fable-loss": {
+      "hash": "3a07cfe01c5ce41a969655dbe87962d3",
+      "last_processed": "2026-07-14T01:31:09.157Z",
+      "chunk_count": 6
+    },
+    "guitar-effectors": {
+      "hash": "d36a5b570804295410190cbc822ca40a",
+      "last_processed": "2026-07-14T01:31:12.355Z",
+      "chunk_count": 6
+    },
+    "michael": {
+      "hash": "9a72bf991a99cf519af4b2eee61d9c62",
+      "last_processed": "2026-07-14T01:31:14.075Z",
+      "chunk_count": 5
+    },
+    "pcloud-tahoe-rclone": {
+      "hash": "3c4a5bae630d50d82a87599524f4133c",
+      "last_processed": "2026-07-14T01:31:15.249Z",
+      "chunk_count": 8
+    },
+    "tropic-birds": {
+      "hash": "9fcedfb9996c72dba9f97504bd004d59",
+      "last_processed": "2026-07-14T01:31:16.223Z",
+      "chunk_count": 1
+    },
+    "asciidoc": {
+      "hash": "d61ab8be7acdf6503fee4cb177621616",
+      "last_processed": "2026-07-14T01:31:17.913Z",
+      "chunk_count": 6
+    },
+    "cloudflare-ai-access-review": {
+      "hash": "c7d04c4a687a79f5f4765770234ee012",
+      "last_processed": "2026-07-14T01:31:19.012Z",
+      "chunk_count": 6
+    },
+    "drone-flight-ban-expansion-2026": {
+      "hash": "44503d72fc96edd4a7da6adcf4bfc00a",
+      "last_processed": "2026-07-14T01:31:19.962Z",
+      "chunk_count": 5
+    },
+    "human-nature": {
+      "hash": "c88bcbcf99966742cb9d0367bbc70455",
+      "last_processed": "2026-07-14T01:31:21.049Z",
+      "chunk_count": 1
+    },
+    "messenger-anonymity": {
+      "hash": "1dc5a4cd316cab1b1b52dceb9547587e",
+      "last_processed": "2026-07-14T01:31:22.124Z",
+      "chunk_count": 8
+    },
+    "pineapple-island": {
+      "hash": "3f17084e65a9ceddd24c1f7ed236cd51",
+      "last_processed": "2026-07-14T01:31:23.141Z",
+      "chunk_count": 3
+    },
+    "sato-jiro": {
+      "hash": "01415fbb72d7f4a1457e39af02b157bb",
+      "last_processed": "2026-07-14T01:31:24.182Z",
+      "chunk_count": 7
+    },
+    "soul-driven": {
+      "hash": "26957b87080871a692e2d39c498b6203",
+      "last_processed": "2026-07-14T01:31:25.627Z",
+      "chunk_count": 6
+    },
+    "tell-it-like-it-is": {
+      "hash": "93c55a47e57e761a732b1568b6157cb6",
+      "last_processed": "2026-07-14T01:31:27.617Z",
+      "chunk_count": 1
+    },
+    "zero": {
+      "hash": "e7726e8018fb2f0dad68814ea6b7a67d",
+      "last_processed": "2026-07-14T01:31:28.747Z",
+      "chunk_count": 1
     }
   }
 }
