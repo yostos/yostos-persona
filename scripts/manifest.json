@@ -1,8 +1,8 @@
 {
   "articles": {
     "Akinas-revival": {
-      "hash": "82a0871d705d1afee6ed33b9f9e91fdc",
-      "last_processed": "2026-05-07T21:42:03.579Z",
+      "hash": "452581f741a95f89f22936c1186ae21e",
+      "last_processed": "2026-08-03T03:25:17.408Z",
       "chunk_count": 1
     },
     "Dining-Midorikawa": {
@@ -11,8 +11,8 @@
       "chunk_count": 1
     },
     "Ephiphone-Texan": {
-      "hash": "3894b4a74ef52e9810a9f120cfb358d5",
-      "last_processed": "2026-05-07T21:42:05.990Z",
+      "hash": "e20e0d95cf61ee47ff34c85810734282",
+      "last_processed": "2026-08-03T03:25:20.114Z",
       "chunk_count": 4
     },
     "Fernandes-bankruptcy": {
@@ -131,8 +131,8 @@
       "chunk_count": 1
     },
     "Dinner-song": {
-      "hash": "5361f966417ee4e99f6647dd6a832e8e",
-      "last_processed": "2026-05-07T21:42:35.986Z",
+      "hash": "00bc4ee87be117e08ee2bc2c4a1421f7",
+      "last_processed": "2026-08-03T03:25:22.578Z",
       "chunk_count": 1
     },
     "Kamikita": {
@@ -231,8 +231,8 @@
       "chunk_count": 4
     },
     "kimetsu-no-yaiba": {
-      "hash": "b7753ea21ee2c7b5e80ffd47e40839e7",
-      "last_processed": "2026-07-14T01:30:56.030Z",
+      "hash": "a975e6f6b9a1fe3f7cb3b4564fd1d607",
+      "last_processed": "2026-08-03T03:25:24.920Z",
       "chunk_count": 1
     },
     "new-years-card": {
@@ -291,8 +291,8 @@
       "chunk_count": 4
     },
     "expo-problem": {
-      "hash": "80f094178c36b40d4805151f9057fda2",
-      "last_processed": "2026-05-07T21:43:16.803Z",
+      "hash": "8c8584a14f2659c9e0bbb923a1fa0bdc",
+      "last_processed": "2026-08-03T03:25:27.392Z",
       "chunk_count": 5
     },
     "houw-to-configure-tinylytics-analytics": {
@@ -381,8 +381,8 @@
       "chunk_count": 7
     },
     "mcp-integration-of-claude-code-inkdrop": {
-      "hash": "2cdc7f30164f74dc498f4443f8bf3300",
-      "last_processed": "2026-05-07T21:43:44.820Z",
+      "hash": "e5ce5b9de264983c1edc0eabc0c99307",
+      "last_processed": "2026-08-03T03:25:30.092Z",
       "chunk_count": 7
     },
     "nhk-ibm": {
@@ -396,8 +396,8 @@
       "chunk_count": 1
     },
     "salmon-run": {
-      "hash": "21188600158f4666b0f0bf248ded4571",
-      "last_processed": "2026-07-14T01:30:52.951Z",
+      "hash": "25fa1592f766d93c4472ee5757c69dc3",
+      "last_processed": "2026-08-03T03:25:32.928Z",
       "chunk_count": 1
     },
     "textlint-introduction": {
@@ -406,8 +406,8 @@
       "chunk_count": 7
     },
     "to-sir-with-love": {
-      "hash": "3d8d6f4dc4d8037586d0ff9a28eaa10e",
-      "last_processed": "2026-05-07T21:43:52.200Z",
+      "hash": "0cd596eae4abeb5e0b80285f3eae8db6",
+      "last_processed": "2026-08-03T03:25:35.364Z",
       "chunk_count": 1
     },
     "tokyo-subway-sarin-attack": {
@@ -416,8 +416,8 @@
       "chunk_count": 4
     },
     "ac-booster-v2": {
-      "hash": "b933451bd1553b266ffe09fc2fc07036",
-      "last_processed": "2026-05-07T21:43:55.291Z",
+      "hash": "c597595fcea96998199ff36dbeee7cdb",
+      "last_processed": "2026-08-03T03:25:38.028Z",
       "chunk_count": 3
     },
     "anthropic-max-plan": {
@@ -441,8 +441,8 @@
       "chunk_count": 3
     },
     "biscayne-blue": {
-      "hash": "58310868e001014ac17e2a82c71edea4",
-      "last_processed": "2026-05-07T21:44:01.092Z",
+      "hash": "2ae777376221206396e21de030e5d215",
+      "last_processed": "2026-08-03T03:25:40.389Z",
       "chunk_count": 1
     },
     "blender-mcp": {
@@ -496,8 +496,8 @@
       "chunk_count": 1
     },
     "straight-from-your-heart": {
-      "hash": "092d6eb284e91364875d1270f0ecba07",
-      "last_processed": "2026-05-07T21:44:14.783Z",
+      "hash": "dfd2218444daa2021a87aaf87f9c1b8c",
+      "last_processed": "2026-08-03T03:25:42.594Z",
       "chunk_count": 1
     },
     "stratocaster-1954": {
@@ -511,18 +511,18 @@
       "chunk_count": 4
     },
     "synthesizer-v-studio-2-pro": {
-      "hash": "06c4ebf65b89776c3d01ce49255c6730",
-      "last_processed": "2026-05-07T21:44:18.561Z",
+      "hash": "a48d2b269fd109e18154b7c3be1cc8c6",
+      "last_processed": "2026-08-03T03:25:45.556Z",
       "chunk_count": 3
     },
     "to-you": {
-      "hash": "532a8a787a2a25c66a02024278e8f6d1",
-      "last_processed": "2026-05-07T21:44:19.593Z",
+      "hash": "7d2fb8a860d063d56710a1d21b064d01",
+      "last_processed": "2026-08-03T03:25:47.870Z",
       "chunk_count": 1
     },
     "we-are-all-alone": {
-      "hash": "ca47ae4bd6f4d0e0c048a7b063d7bf7f",
-      "last_processed": "2026-05-07T21:44:20.706Z",
+      "hash": "bb52f2c0533ee6b6637ecd735cc56849",
+      "last_processed": "2026-08-03T03:25:51.268Z",
       "chunk_count": 1
     },
     "yellow-devil": {
@@ -556,8 +556,8 @@
       "chunk_count": 4
     },
     "feedbacks-feel": {
-      "hash": "07565ef920933a299925f2dbf04e28bd",
-      "last_processed": "2026-05-07T21:44:29.055Z",
+      "hash": "ba3c4a83e117e979415d7c570b7b7955",
+      "last_processed": "2026-08-03T03:25:53.798Z",
       "chunk_count": 1
     },
     "ftt-overdriveland": {
@@ -571,13 +571,13 @@
       "chunk_count": 5
     },
     "landslide": {
-      "hash": "ffcde97743d94a57ae78c61add093078",
-      "last_processed": "2026-05-07T21:44:32.598Z",
+      "hash": "6773626cb2ef7d1d550bbd4d5201e563",
+      "last_processed": "2026-08-03T03:25:56.150Z",
       "chunk_count": 1
     },
     "max": {
-      "hash": "407a934a3cc60ba2ddc113f53b81d1a1",
-      "last_processed": "2026-05-07T21:44:33.784Z",
+      "hash": "a54db1e7d34549ed39599d6d7a2c2b6b",
+      "last_processed": "2026-08-03T03:25:58.416Z",
       "chunk_count": 4
     },
     "revolution": {
@@ -621,8 +621,8 @@
       "chunk_count": 8
     },
     "feel-like": {
-      "hash": "09b88e5da7de72136114cb209c2c82b9",
-      "last_processed": "2026-05-07T21:44:44.881Z",
+      "hash": "c7be08e3f9a25097d7202bfd6fae9a7d",
+      "last_processed": "2026-08-03T03:26:01.242Z",
       "chunk_count": 3
     },
     "fwritedown": {
@@ -656,8 +656,8 @@
       "chunk_count": 3
     },
     "summer-you": {
-      "hash": "d1c2b19be8b425269bc6f7ac458365e1",
-      "last_processed": "2026-05-07T21:44:55.326Z",
+      "hash": "24e20e57e8a57fa90405ae4a5c6fd44a",
+      "last_processed": "2026-08-03T03:26:04.373Z",
       "chunk_count": 1
     },
     "takataki-lake": {
@@ -721,8 +721,8 @@
       "chunk_count": 1
     },
     "rain-in-summer": {
-      "hash": "6ae482101d51f1e8ab2765846a2207bc",
-      "last_processed": "2026-05-07T21:45:12.859Z",
+      "hash": "cccceedee8196193323133f10208dca0",
+      "last_processed": "2026-08-03T03:26:07.320Z",
       "chunk_count": 1
     },
     "the-night-delay": {
@@ -871,8 +871,8 @@
       "chunk_count": 4
     },
     "takanaka": {
-      "hash": "a9cb0319560390fa8fcfcdc5412a4be1",
-      "last_processed": "2026-07-14T01:30:57.950Z",
+      "hash": "0ca795a1786089f6d55bac93f123506a",
+      "last_processed": "2026-08-03T03:26:17.048Z",
       "chunk_count": 1
     },
     "typepad-shutdown-end-of-blog-era": {
@@ -1156,9 +1156,9 @@
       "chunk_count": 5
     },
     "claude-code-entry": {
-      "hash": "9120ab877cedf380dbd7550f2cb3e174",
-      "last_processed": "2026-07-14T01:31:30.539Z",
-      "chunk_count": 2
+      "hash": "35be7b11fa553ac0b9ecd8254e57b641",
+      "last_processed": "2026-08-03T03:26:09.774Z",
+      "chunk_count": 8
     },
     "claude-code-jrnl-context-handoff": {
       "hash": "be49c60dd4f23cd8e04128cca8fcbb71",
@@ -1261,8 +1261,8 @@
       "chunk_count": 8
     },
     "why-stagnant-system-migration-fails": {
-      "hash": "24b7e35b29b8d8352204d2a01dd37d20",
-      "last_processed": "2026-05-07T21:47:47.771Z",
+      "hash": "21a8bcd34a15a399a10cb8fd8519f125",
+      "last_processed": "2026-08-03T03:26:14.178Z",
       "chunk_count": 13
     },
     "yachiyo-cherry-blossoms": {
@@ -1791,8 +1791,8 @@
       "chunk_count": 1
     },
     "messenger-anonymity": {
-      "hash": "1dc5a4cd316cab1b1b52dceb9547587e",
-      "last_processed": "2026-07-14T01:31:22.124Z",
+      "hash": "535199937a9f63daf8df527b17b49e16",
+      "last_processed": "2026-08-03T03:26:34.009Z",
       "chunk_count": 8
     },
     "pineapple-island": {
@@ -1819,6 +1819,66 @@
       "hash": "e7726e8018fb2f0dad68814ea6b7a67d",
       "last_processed": "2026-07-14T01:31:28.747Z",
       "chunk_count": 1
+    },
+    "era-of-covid-19": {
+      "hash": "0432e2b8e94e639064ac66b742d7c4e6",
+      "last_processed": "2026-08-03T03:25:14.708Z",
+      "chunk_count": 5
+    },
+    "aws-card-registration-3ds-authentication-declined": {
+      "hash": "ffcfe39597583c6dd22c8c7abc8965ec",
+      "last_processed": "2026-08-03T03:26:18.566Z",
+      "chunk_count": 4
+    },
+    "aws-cloudfront-outage-paypay": {
+      "hash": "0dc839b4ac1dedde6ccdada95cd379ff",
+      "last_processed": "2026-08-03T03:26:19.846Z",
+      "chunk_count": 6
+    },
+    "building-contacts-database-mulmoclaude": {
+      "hash": "dbe5db83d054f00084908a05ebaa6bd7",
+      "last_processed": "2026-08-03T03:26:21.572Z",
+      "chunk_count": 5
+    },
+    "earthquake-in-kumamoto": {
+      "hash": "919736eac69bac0375aa2c09b8a42dce",
+      "last_processed": "2026-08-03T03:26:23.085Z",
+      "chunk_count": 4
+    },
+    "era-of-covid-19-revisited": {
+      "hash": "0ae89e9a7601d37bc04aac7900eecdf7",
+      "last_processed": "2026-08-03T03:26:24.576Z",
+      "chunk_count": 8
+    },
+    "fair-wind": {
+      "hash": "e355efb3caa5968ae9aab5da200b4767",
+      "last_processed": "2026-08-03T03:26:26.804Z",
+      "chunk_count": 1
+    },
+    "fastmail-mcp": {
+      "hash": "4db96358a1f0b61349840039e6da2b32",
+      "last_processed": "2026-08-03T03:26:28.420Z",
+      "chunk_count": 6
+    },
+    "fender-yamaha-cease-and-desist": {
+      "hash": "88e43fbe00701f01821f4715a41f5460",
+      "last_processed": "2026-08-03T03:26:30.169Z",
+      "chunk_count": 6
+    },
+    "mass-gomi": {
+      "hash": "9a3123877b029b86ee5e982e42b44fd8",
+      "last_processed": "2026-08-03T03:26:31.442Z",
+      "chunk_count": 1
+    },
+    "mxr-distortion-plus": {
+      "hash": "a120fde019f410fc7aa484162837ddda",
+      "last_processed": "2026-08-03T03:26:35.799Z",
+      "chunk_count": 7
+    },
+    "takaichi-64bills-media-bias": {
+      "hash": "d1b9917c48c4b22364b02131b652d77d",
+      "last_processed": "2026-08-03T03:26:37.009Z",
+      "chunk_count": 6
     }
   }
 }
