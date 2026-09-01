@@ -231,8 +231,8 @@
       "chunk_count": 4
     },
     "kimetsu-no-yaiba": {
-      "hash": "b7753ea21ee2c7b5e80ffd47e40839e7",
-      "last_processed": "2026-08-28T05:57:46.693Z",
+      "hash": "a975e6f6b9a1fe3f7cb3b4564fd1d607",
+      "last_processed": "2026-09-01T01:16:22.297Z",
       "chunk_count": 1
     },
     "new-years-card": {
@@ -396,8 +396,8 @@
       "chunk_count": 1
     },
     "salmon-run": {
-      "hash": "21188600158f4666b0f0bf248ded4571",
-      "last_processed": "2026-08-28T05:57:04.802Z",
+      "hash": "25fa1592f766d93c4472ee5757c69dc3",
+      "last_processed": "2026-09-01T01:16:28.004Z",
       "chunk_count": 1
     },
     "textlint-introduction": {
@@ -871,8 +871,8 @@
       "chunk_count": 4
     },
     "takanaka": {
-      "hash": "a9cb0319560390fa8fcfcdc5412a4be1",
-      "last_processed": "2026-08-28T05:57:49.097Z",
+      "hash": "c9f65f7c786ada2df8e99bf58b855dd5",
+      "last_processed": "2026-09-01T01:16:49.804Z",
       "chunk_count": 1
     },
     "typepad-shutdown-end-of-blog-era": {
@@ -941,8 +941,8 @@
       "chunk_count": 1
     },
     "alone": {
-      "hash": "356164c254000a54b1b9d0a9b8b192ce",
-      "last_processed": "2026-05-07T21:46:12.476Z",
+      "hash": "65636be45a3a7228f8fe94c560cea4c1",
+      "last_processed": "2026-09-01T01:16:32.327Z",
       "chunk_count": 1
     },
     "amber-glint": {
@@ -1101,9 +1101,9 @@
       "chunk_count": 1
     },
     "overseas-business-trip-essentials-for-newbies": {
-      "hash": "ecacf88b446f681e4fc08157ba792182",
-      "last_processed": "2026-05-07T21:46:54.881Z",
-      "chunk_count": 12
+      "hash": "0c39c55e38302daf43b591e9436db8d7",
+      "last_processed": "2026-09-01T01:16:39.166Z",
+      "chunk_count": 15
     },
     "pdf-processor-plugin": {
       "hash": "62b1d17af066ebe34b459b703d0723e0",
@@ -1156,9 +1156,9 @@
       "chunk_count": 5
     },
     "claude-code-entry": {
-      "hash": "9120ab877cedf380dbd7550f2cb3e174",
-      "last_processed": "2026-08-28T05:58:19.825Z",
-      "chunk_count": 2
+      "hash": "35be7b11fa553ac0b9ecd8254e57b641",
+      "last_processed": "2026-09-01T01:16:42.731Z",
+      "chunk_count": 8
     },
     "claude-code-jrnl-context-handoff": {
       "hash": "be49c60dd4f23cd8e04128cca8fcbb71",
@@ -1461,8 +1461,8 @@
       "chunk_count": 4
     },
     "days-we-left-behind": {
-      "hash": "2177873fd535f679cb0ab536a8d63bb2",
-      "last_processed": "2026-05-07T21:48:45.428Z",
+      "hash": "a13213fdbdbf4a51d731ec49c9be63f2",
+      "last_processed": "2026-09-01T01:16:45.953Z",
       "chunk_count": 1
     },
     "dji-avata2": {
@@ -1766,8 +1766,8 @@
       "chunk_count": 8
     },
     "tropic-birds": {
-      "hash": "9fcedfb9996c72dba9f97504bd004d59",
-      "last_processed": "2026-07-14T01:31:16.223Z",
+      "hash": "c5b8b764c017424b085c71ea9bea4570",
+      "last_processed": "2026-09-01T01:16:52.932Z",
       "chunk_count": 1
     },
     "asciidoc": {
@@ -1786,8 +1786,8 @@
       "chunk_count": 5
     },
     "human-nature": {
-      "hash": "c88bcbcf99966742cb9d0367bbc70455",
-      "last_processed": "2026-07-14T01:31:21.049Z",
+      "hash": "69112eff72b542f2c1ff314b9e16a6ae",
+      "last_processed": "2026-09-01T01:16:55.885Z",
       "chunk_count": 1
     },
     "messenger-anonymity": {
@@ -1796,8 +1796,8 @@
       "chunk_count": 8
     },
     "pineapple-island": {
-      "hash": "3f17084e65a9ceddd24c1f7ed236cd51",
-      "last_processed": "2026-07-14T01:31:23.141Z",
+      "hash": "4f773f36429b87c0f6c9c0f4dcebc18c",
+      "last_processed": "2026-09-01T01:16:59.499Z",
       "chunk_count": 3
     },
     "sato-jiro": {
@@ -1811,8 +1811,8 @@
       "chunk_count": 6
     },
     "tell-it-like-it-is": {
-      "hash": "93c55a47e57e761a732b1568b6157cb6",
-      "last_processed": "2026-07-14T01:31:27.617Z",
+      "hash": "2f1cff93089d07614e6fde853305531c",
+      "last_processed": "2026-09-01T01:17:02.313Z",
       "chunk_count": 1
     },
     "zero": {
@@ -1924,6 +1924,16 @@
       "hash": "9a0b2ced7733782461ef017f8724d029",
       "last_processed": "2026-08-28T05:58:15.571Z",
       "chunk_count": 6
+    },
+    "migrate-to-avif": {
+      "hash": "50f74e71d4c3e3bfbf0cbc10301ff88c",
+      "last_processed": "2026-09-01T01:17:04.010Z",
+      "chunk_count": 5
+    },
+    "dont-classify-hallucinate": {
+      "hash": "be24a38a54dc21ac29bb600358d66e7e",
+      "last_processed": "2026-09-01T01:17:07.102Z",
+      "chunk_count": 8
     }
   }
 }
