@@ -7,7 +7,7 @@ description = """
 実務的な準備ポイントをまとめました。
 """
 date = 2026-01-24
-updated = 2026-08-31
+updated = 2026-09-27
 
 [taxonomies]
 tags = ["Trivialities", "Travel"]
@@ -18,22 +18,45 @@ local_image = "cover.avif"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.avif", alt="Cover") }}
+{{< image src="cover.avif" alt="Cover" />}}
 
 <!-- textlint-enable -->
+
+この記事は海外出張初心者に向けたアドバイスです。特定の知り合いを想定して書いているので、**渡航先はフランスを前提**として書いています。ただし、他の国でも役立つ情報は多いと思います。
 
 <details>
 <summary>Table of Contents</summary>
 <!-- toc -->
 </details>
 
+## 出張前準備チェックリスト(2026-09-27追記)
+
+出発前に、本文で触れた重要な準備が済んでいるかを次の表で確認してください。
+詳しい理由や選び方は各セクションで説明しています。
+
+| 分類   | 項目                       | 確認すること                                                                                                                                                                                                            |
+| ------ | -------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 書類   | パスポート                 | 残有効期限が帰国予定時点で3ヶ月以上。紛失に備えて、ホテルの金庫に置く紙のコピーか、PCなどに入れたPDFを用意した                                                                                                          |
+| 書類   | ホテル予約                 | 予約を確認できるものをすぐ出せる                                                                                                                                                                                        |
+| 書類   | eチケット控え              | 帰りの便の分をスマートフォンか紙ですぐ出せる                                                                                                                                                                            |
+| 書類   | 訪問先からの招待メール     | 印刷しておく。招待メールを得られない場合(通常はそんなことはない)、自社の正式な出張証明書(英文、可能であればレターヘッド入りの書式)                                                                                      |
+| 書類   | 訪問先                     | 会社名、担当者名、住所、連絡先（電話番号、メールアドレス）をすぐ出せる                                                                                                                                                  |
+| 書類   | 残高証明書                 | 渡航直前に発行した。ドコモSMTBネット銀行ならWebサイトからPDFを無料で即時発行できる                                                                                                                                      |
+| 書類   | 海外旅行保険証明書（英文） | **入国審査で提示を求められる必須書類**。会社の海外出張保険（補償3万ユーロ以上）に加入し、証明書を発行してもらった                                                                                                       |
+| 手続き | Visit Japan Web            | アカウントを作り、パスポート情報と携帯品・別送品の申告を登録した                                                                                                                                                        |
+| 手続き | たびレジ                   | 登録した                                                                                                                                                                                                                |
+| 通信   | データ通信                 | 会社のモバイルルーター、キャリアの定額サービス、eSIMのいずれかを手配した                                                                                                                                                |
+| 電源   | コンセントの変換プラグ     | 日本のプラグをフランスのコンセントに挿すためのCタイプを用意した                                                                                                                                                         |
+| お金   | クレジットカード           | 2枚以上を別々の場所に入れた。海外利用が止められていないこと、利用限度額が足りること、ICチップの暗証番号を覚えていることを確認した。スマートフォンのGoogleウォレットに登録し、国内で一度タッチ決済を使って動作を確かめた |
+| 連絡   | 緊急連絡先                 | 会社の緊急連絡先と、現地の日本大使館・領事館の連絡先を控えた。家族に滞在先ホテルと現地連絡先を伝えた                                                                                                                    |
+
 ## 出入国の手続き(2026-08-31追記)
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 シェンゲン圏とは、域内の国境検査を廃止した29カ国の枠組みです。
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 
@@ -41,13 +64,76 @@ local_image = "cover.avif"
 短期出張であればビザは不要で、任意の180日間のうち滞在日数の合計が90日を超えなければ滞在できます。
 パスポートはシェンゲン圏を出国する時点で3か月以上の残存有効期間が必要です。
 
+入国審査では、滞在の目的、滞在中の資金、帰国の手段を示すものを求められることがあります。
+フランス政府の案内に沿って、次のものをすぐ出せるようにしておいてください。
+
+- ホテルの予約を確認できるもの
+- 帰りの便のeチケット控え（旅程表）
+- 訪問先からの招待メール（Invitation）の印刷。得られない場合は、会社の正式な出張証明書（英文。可能であればレターヘッド入り）
+- 訪問先の会社名と担当者名
+- クレジットカード
+- 銀行の残高証明書。ドコモSMTBネット銀行ならWebサイトからPDFを無料で即時発行できるので、渡航直前に用意する
+- フランス渡航用の海外旅行保険証明書（英文）
+
+海外旅行保険は、入っておいたほうがよいという程度のものではなく、**フランスの入国条件**として確認しておくべきものです。
+France-Visasは、90日以内の観光や出張には旅行保険への加入が義務（mandatory）だと明記しています。
+補償額は最低3万ユーロで、医療搬送と救急・入院治療の費用を含み、滞在期間中シェンゲン圏全域で有効でなければなりません。
+会社に海外出張保険への加入を求め、英文の保険証明書を発行してもらっておいてください。
+
 2026年4月10日から、シェンゲン圏29カ国のすべての国境検問所でEES（出入域システム）の運用が始まりました。
 入国時と出国時に顔画像と指紋が電子的に記録される仕組みで、これまでのパスポートへのスタンプ押印に代わるものです。
 渡航前の申請は必要ありません。
 
+以下は典型的なInvitaition Mailの例です。
+以下のような文面で相手側から送ってもらい、印刷しておきましょう。印刷時に送信日が入るように注してください。
+
+```text
+件名: Letter of Invitation for Business Visit – [Visitor's Full Name]
+
+Dear [Visitor's Name],
+
+On behalf of [Host Company Name], I am pleased to invite you to visit
+our office in [City, France] for business meetings.
+
+The purpose of your visit is to [discuss our business cooperation].
+
+The visit is planned as follows.
+
+Visitor: [Full Name]
+Position: [Job Title]
+Company: [Visitor's Company Name], Japan
+Purpose of visit: [Business meetings]
+Visit dates: [Date] to [Date]
+Location: [Host Company Name, Full Address]
+Host contact: [Name, Position]
+Telephone: [Phone Number]
+Email: [Email Address]
+
+During your visit, you will attend business meetings with members of
+our team and discuss [brief description of the business subject].
+
+We look forward to welcoming you to [Host Company Name] in [City].
+
+Please do not hesitate to contact me if you require any further
+information regarding this invitation.
+
+Best regards,
+
+[Name]
+[Job Title]
+[Host Company Name]
+[Company Address]
+[Telephone]
+[Email]
+```
+
 事前申請が必要なETIAS（欧州渡航情報認証制度）は2026年第4四半期の導入が予定されていますが、
 2026年8月時点で開始時期は確定していません。
 出発前に外務省の海外安全ホームページとフランス大使館のサイトで最新の情報を確認してください。
+
+あわせて、外務省の海外旅行登録サービス「たびレジ」にも登録しておいてください。
+渡航先の安全情報や緊急時の連絡がメールで届きます。
+3か月未満の短期渡航では登録は任意ですが、強くお勧めします。
 
 帰国時にも準備があります。
 Visit Japan Webに携帯品・別送品の申告を登録しておくと、QRコードで電子申告ゲートを通過できます。
@@ -61,9 +147,9 @@ Visit Japan Webに携帯品・別送品の申告を登録しておくと、QRコ
 
 <!-- textlint-disable -->
 
-{% aside(position="right") %}
+{% <aside position="right"> %}
 私物PCの場合は、当然業務では使わないこと
-{% end %}
+{% </aside> %}
 
 <!-- textlint-enable -->
 
@@ -78,6 +164,53 @@ PCは必ず機内持ち込み手荷物にしてください。預け荷物にす
 
 空港のセキュリティチェックではPCをバッグから取り出す必要があります。
 取り出しやすい場所に入れておくとスムーズです。
+
+## スーツケースを買う(2026-09-01追記)
+
+1週間の出張なら70L前後が目安です。
+これより小さいと書類や土産で足りなくなり、大きいと預け入れの重量制限に近づきます。
+
+見るべきは、キャスター、本体重量、保証の3点です。デザインや色は最後で構いません。
+以下が推奨するベスト3です。
+
+| モデル                         | 容量 |  重量 |     価格 | キャスター | 保証                                   |
+| ------------------------------ | ---: | ----: | -------: | ---------- | -------------------------------------- |
+| プロテカ 360G5                 |  71L | 4.2kg | 99,000円 | 双輪       | 3年完全無償（航空会社の破損も対象）    |
+| プロテカ エアロフレックスDX2   |  71L | 3.1kg | 93,500円 | 単輪       | 3年完全無償（航空会社の破損も対象）    |
+| サムソナイト C-LITE スピナー69 |  68L | 2.5kg | 89,100円 | 双輪       | 条件付き10年（航空会社の破損は対象外） |
+
+結論から言うと、初めての1台にはプロテカの360G5をお勧めします。理由は3つあります。
+
+キャスター
+: プロテカは他社より一段上。「ベアロンホイール」という高耐久のクロム鋼ベアリングを使った独自開発のホイールで摩擦係数を約50%軽減。「サイレントキャスター」は従来モデルに対し体感音量を約30%軽減。静音で軽く転がるのは想像以上にストレス軽減。フランスのように石畳が多いと、双輪が安定。
+
+保証
+: プロテカは日本製で購入から3年間、完全無償。他社が対応しない航空会社の取り扱いによる破損も対象。
+
+開閉方式
+: 縦横どちらにも開ける360度ファスナー。荷物を底側にまとめる1気室と、蓋側と底側に分ける2気室を切り替えられる。ホテルの狭い部屋で、立てたまま縦に開けられるのが効く。
+
+プロテカ360G5は、2026年8月に発売されたばかりの最新モデルでもあります。
+
+<!-- textlint-disable -->
+
+<div class="kaerebalink-box" style="text-align:left;padding-bottom:20px;font-size:small;zoom: 1;overflow: hidden;"><div class="kaerebalink-image" style="float:left;margin:0 15px 10px 0;"><a href="https://hb.afl.rakuten.co.jp/hgc/g00qlfd5.9srin191.g00qlfd5.9sriod9e/kaereba_main_202609012103547332?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Face-store%2F02623%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Face-store%2Fi%2F10009865%2F&rafcid=wsc_i_is_c7c582dc-0853-4585-9176-66e2a26d9c5b" target="_blank" ><img src="https://thumbnail.image.rakuten.co.jp/@0_mall/ace-store/cabinet/item2026/proteca/02623.jpg?_ex=128x128" style="border: none;" /></a></div><div class="kaerebalink-info" style="line-height:120%;zoom: 1;overflow: hidden;"><div class="kaerebalink-name" style="margin-bottom:10px;line-height:120%"><a href="https://hb.afl.rakuten.co.jp/hgc/g00qlfd5.9srin191.g00qlfd5.9sriod9e/kaereba_main_202609012103547332?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Face-store%2F02623%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Face-store%2Fi%2F10009865%2F&rafcid=wsc_i_is_c7c582dc-0853-4585-9176-66e2a26d9c5b" target="_blank" >【 エース公式 】 PROTECA プロテカ 360G5 メンズ レディース スーツケース キャリーケース 日本製 双輪 360度オープン キャスターストッパー Lサイズ ブランド おしゃれ ブラック 全5色 71L 02623</a><div class="kaerebalink-powered-date" style="font-size:8pt;margin-top:5px;font-family:verdana;line-height:120%">posted with <a href="https://kaereba.com" rel="nofollow" target="_blank">カエレバ</a></div></div><div class="kaerebalink-detail" style="margin-bottom:5px;"></div><div class="kaerebalink-link1" style="margin-top:10px;"><div class="shoplinkrakuten" style="display:inline;margin-right:5px"><a href="https://hb.afl.rakuten.co.jp/hgc/1300574f.7d238558.13005750.4bcd8088/kaereba_main_202609012103547332?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%2597%25E3%2583%25AD%25E3%2583%2586%25E3%2582%25AB%2520360G5%2F-%2Ff.1-p.1-s.1-sf.0-st.A-v.2%3Fx%3D0%26scid%3Daf_ich_link_urltxt&m=http%3A%2F%2Fm.rakuten.co.jp%2F" target="_blank" >楽天市場</a></div><div class="shoplinkamazon" style="display:inline;margin-right:5px"><a href="https://www.amazon.co.jp/gp/search?keywords=%E3%83%97%E3%83%AD%E3%83%86%E3%82%AB%20360G5&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&tag=yostosweb-22" target="_blank" >Amazon</a></div></div></div><div class="booklink-footer" style="clear: left"></div></div>
+
+<!-- textlint-enable -->
+
+弱点は重さです。
+重量差が実際に効くのは、階段や段差で持ち上げる場面です。
+石畳を転がしている時間のほうが長いなら、軽さよりもキャスター性能を優先しましょう。
+
+石畳を歩く機会の少ない都市が中心で、とにかく軽くしたいならエアロフレックスDX2です。
+クロスファイバーという、ポリプロピレン繊維を樹脂フィルムで挟んで加熱圧着した素材を使っており、強い力を受けても元の形に戻ります。
+サムソナイトのCurvと同じ発想の素材で、71Lで3.1kgという軽さと堅牢性を両立しています。単輪であることだけが弱点です。
+
+購入時には保証の条件にも注意してください。
+
+- 保証は正規販売店で購入した製品だけが対象である。並行輸入品とアウトレット品は対象外
+- 保証書に店印を押してもらうか、レシートを添えて保管する。保証書は再発行されない
+- 販売店の商品ページに「10年保証」とあっても、完全無償で修理されるのは3年である
 
 ## 機内での座席選び
 
@@ -97,18 +230,44 @@ PCは必ず機内持ち込み手荷物にしてください。預け荷物にす
 現地でのインターネット接続手段を事前に確保しておくことは非常に重要です。
 まず、会社で海外用のモバイルルーターを貸し出していないか確認してください。用意がある会社も多いです。
 
-会社にない場合は、自分で手配します。主な選択肢は以下の2つです。
+<!-- textlint-disable -->
 
-- ポケットWiFiレンタル
-  - 空港や事前予約でレンタルできるモバイルルーター
-  - 設定が簡単で、PCとスマホを同時接続できる
-  - 端末の持ち歩きと充電が必要。紛失・破損時は弁償リスクあり
+{% <aside position="right"> %}
+mineoは音声通話とSMSなら海外でも使えますが、着信にも料金がかかる従量課金です。使わないでください。
+{% </aside> %}
+
+<!-- textlint-enable -->
+
+会社にない場合は、自分で手配します。
+日本の携帯会社には、国内のデータ量をそのまま海外で使える定額サービスがあります。
+ドコモの「世界そのままギガ」ならフランスは24時間980円で、事前の申し込みが必要です。
+ただし、mineoは海外でのデータ通信そのものに対応していません。
+
+選択肢は次の2つです。
+
 - eSIM
   - スマートフォンに直接データプランを追加する方式
   - 端末が増えず、アプリやWebで購入してすぐ使える
   - eSIM対応端末が必要。PCはテザリング経由で接続
+- ポケットWiFiレンタル
+  - 空港や事前予約でレンタルできるモバイルルーター
+  - 設定が簡単で、PCとスマホを同時接続できる
+  - 端末の持ち歩きと充電が必要。紛失・破損時は弁償リスクあり
 
-短期間であればeSIMが手軽です。PCを頻繁に使う場合はポケットWiFiの方が便利かもしれません。
+フランスへの短期出張ならeSIMで十分です。
+日額で積み上がるポケットWiFiのレンタル料より安く収まることが多く、PCもテザリング経由で問題なく使えます。
+
+eSIMは出発前に日本で調達しておいてください。
+現地では身分証明の提示など、手続きが煩雑です。
+
+お勧めはUbigiです。1週間の出張なら10GBのプランで十分足ります。
+
+- [Ubigi](https://cellulardata.ubigi.com/rates-and-coverage/france-data-plans/france-10gb-7-days/)
+  - NTTコミュニケーションズ傘下のTransatelが運営。日本語のサイトで購入できる
+  - フランス向けは10GBを7日間使えて8ドル
+- [Airalo](https://www.airalo.com/france-esim)
+  - 取り扱う国と地域が広い
+  - フランス向けは3GBを7日間で6.50ユーロから
 
 ## スマートフォンの設定
 
@@ -116,12 +275,12 @@ PCは必ず機内持ち込み手荷物にしてください。預け荷物にす
 
 設定は回線ごとに切り替えます。使う手段に応じて次のようにしてください。
 
-| 回線 | ポケットWiFiの場合 | eSIMの場合 |
-|---|---|---|
-| 国内SIM | データ通信オフ、データローミングオフ | 回線を無効化 |
-| 現地用eSIM | 使わない | データローミングをオン |
+| 回線       | キャリアの定額サービスの場合 | ポケットWiFiの場合                   | eSIMの場合             |
+| ---------- | ---------------------------- | ------------------------------------ | ---------------------- |
+| 国内SIM    | データローミングをオン       | データ通信オフ、データローミングオフ | 回線を無効化           |
+| 現地用eSIM | 使わない                     | 使わない                             | データローミングをオン |
 
-国内SIMのローミングを切り忘れると、知らないうちに国内キャリア経由で通信してしまい、帰国後に高額な請求を受ける可能性があります。
+定額サービスを使わないのに国内SIMのローミングを切り忘れると、知らないうちに国内キャリア経由で通信してしまい、帰国後に高額な請求を受ける可能性があります。
 一方、現地用eSIMは現地の回線を借りて通信する仕組みなので、こちらはオンにしないと繋がりません。
 
 設定画面の場所はiPhoneとAndroidで異なります。
@@ -133,7 +292,7 @@ PCは必ず機内持ち込み手荷物にしてください。預け荷物にす
 
 ## 充電器と電源
 
-海外では電源コンセントの形状が日本と異なります。充電器と変換プラグを忘れずに持参してください。
+フランスの電源コンセントは日本と形状が異なります。充電器と変換プラグを忘れずに持参してください。
 
 ### USB充電器
 
@@ -148,7 +307,7 @@ CIO NovaPort TRIO II 67Wは、USB-Cポート2つとUSB-Aポート1つを搭載�
 ### モバイルバッテリー
 
 モバイルバッテリーも忘れずに持参してください。
-スマホはGrabやマップ、翻訳アプリなど現地で頻繁に使うため、バッテリー切れは致命的です。
+スマホはUberやマップ、翻訳アプリなど現地で頻繁に使うため、バッテリー切れは致命的です。
 
 信頼できるメーカーのものを選んでください。
 安価な無名ブランド品は発火リスクがあり、機内での事故は致命的です。AnkerやCIOなど、品質管理がしっかりしたメーカーの製品をお勧めします。
@@ -162,25 +321,45 @@ CIO NovaPort TRIO II 67Wは、USB-Cポート2つとUSB-Aポート1つを搭載�
 
 ### 変換プラグ
 
-渡航先が決まっていない段階では、マルチタイプの変換プラグを用意しておくと安心です。
-1台で世界中のほとんどの国に対応できます。
+フランスのコンセントはCタイプとSEタイプで、どちらも丸いピンが2本並んだ形です。
+日本のAタイプのプラグは挿さらないので、変換プラグが要ります。
 
-お勧めはカシムラのマルチ変換プラグです。
-A・B・BF・C・O・SEタイプに対応し、50g未満と軽量で持ち運びに便利です。
+買うのはCタイプの変換プラグ1個で足ります。
+SEタイプのコンセントにもCタイプのプラグは挿さるため、フランス国内ならこれ1つで困りません。
+カシムラのWP-3は35×47mmほどの大きさで13gしかなく、荷物になりません。
+充電器側で口数を増やせるので、変換プラグは1口で構いません。
+
+この先ほかの国にも行くなら、マルチタイプを選んでおくと使い回せます。
+カシムラのマルチ変換プラグはA・B・BF・C・O・SEタイプに対応して50g未満です。
 エレコムやサンワサプライの製品も品質が安定しています。
 
 変換プラグは電圧を変換しません。
-使用する機器が海外の電圧（多くの国で220〜240V）に対応しているか確認してください。
-最近のノートPCやスマホの充電器は「100〜240V」対応のものがほとんどです。
-ヘアドライヤーなど日本専用の家電製品は変圧器なしで使えませんが、持っていくことは稀でしょう。
+フランスの電源は230V・50Hzで、日本の100Vとは異なります。
+最近のノートPCやスマートフォンの充電器は「100〜240V」対応のものがほとんどなので、変圧器は不要です。
+出発前に、手持ちの充電器の表示を確認しておいてください。
+
+ヘアドライヤーは持っていかないでください。
+日本専用の100V製品はフランスでは使えず、変圧器は重くて出張の荷物には向きません。
+ホテルの備え付けを使ってください。
+
+電気シェーバーは、本体かACアダプターの表示を確認してください。
+「100-240V」と書かれていれば、変換プラグを介してそのまま使えます。
+「100V」とだけ表示されている国内専用機は持っていかないでください。
+変圧器を使っても電圧が不安定になり、故障や事故につながるとメーカーが明示しています。
+USB充電に対応した機種なら変換プラグすら要らず、PC用の充電器から充電できます。
 
 ## 現金とカードの使い分け
 
 海外での支払いは、基本的にクレジットカードを使うことをお勧めします。為替手数料も両替より有利な場合が多く、利用明細が残るので経費精算にも便利です。
 
-現金は、屋台やタクシー、チップなど少額の支払い用に持っておく程度で十分です。1週間程度の出張であれば、4万円相当の現地通貨があれば困ることはないでしょう。
+フランスではタクシーもクレジットカードで支払えます。
+金額にかかわらずカード決済を受け付けることが法律で義務づけられており、稼働する決済端末を車内に備えることも義務です。
 
-多くの場合、両替は空港よりも現地の銀行や両替所のレートが良いです。ただし、到着直後にタクシーや軽食で現金が必要になることもあるので、空港で5,000円程度は両替しておくと安心です。
+現金が要るのは、マルシェや公衆トイレ、チップくらいです。
+これに加えて、フランスでは加盟店がカード決済の最低利用金額を決められます。
+店内に掲示していれば合法で、小さなブーランジェリーなどで「カードは10ユーロから」と貼り出されているのはこのためです。
+1週間程度の出張なら、1万5,000円相当の現地通貨があれば困ることはないでしょう。
+この程度の額なら、両替は到着した空港で済ませて構いません。
 
 トラベラーズチェックは現在ほとんど使われていないため、考慮する必要はありません。
 
@@ -188,7 +367,7 @@ A・B・BF・C・O・SEタイプに対応し、50g未満と軽量で持ち運び
 
 - 海外利用が止められていないか
 - 利用限度額が足りているか。宿泊費をまとめて決済すると届いてしまうことがある
-- ICチップの暗証番号を覚えているか。サインで通せる国ばかりではない
+- ICチップの暗証番号を覚えているか。フランスは暗証番号が必須で、サインでは通らない
 
 カードは2枚以上を別々の場所に分けて持ちます。
 不正利用の検知などで突然1枚が使えなくなることもあります。その場で代わりを出せないと、支払いや移動が止まります。
@@ -197,6 +376,10 @@ A・B・BF・C・O・SEタイプに対応し、50g未満と軽量で持ち運び
 普段の支払いは、Googleウォレットに登録してタッチ決済にすると安全です。
 実際のカード番号は店に渡らず、端末ごとの仮想カード番号と1回限りの暗号で決済するため、スキミングや加盟店からの漏洩で番号を盗まれません。
 カードを手元から離さずに済み、暗証番号を覗き見される心配もなくなります。
+フランスではもう1つ利点があります。
+カードのタッチ決済は1回50ユーロが上限で、超えるとカードを挿して暗証番号を入れなければなりません。
+一方、スマートフォンのタッチ決済はこの上限の対象外です。
+端末側で本人確認を済ませているためで、金額を気にせず使えます。
 出発前に端末のNFCをオンにして、国内で一度使って動作を確かめておいてください。
 物理カードは、バッテリー切れやATMでの現金引き出しに備えて必ず併用します。
 
@@ -225,22 +408,23 @@ BoltやFreeNowも使えますが、まず1つ入れるならUberです。
 
 ## チップについて
 
-チップの習慣は渡航先によって大きく異なります。
+フランスでは、レストランやカフェのサービス料が料金に含まれています。
+メニューや請求書には「prix service compris」と表示する義務があり、そこに書かれた金額がそのまま支払う額です。
+チップは完全に任意で、店側から要求できません。
 
-アメリカでは飲食店やタクシーで15〜20%のチップが事実上必須ですが、アジア圏では基本的に不要な国が多いです。
-中国・韓国・日本ではチップを渡す習慣がなく、渡すとかえって困惑されることもあります。
+統計によると、フランス人の半数がチップを渡しています。
+特に不満が無ければ次の額を目安に渡すとよいでしょう。
 
-タイの場合は少し事情が異なり、以下のような場面では少額のチップを渡すことがあります。
+- カフェで飲み物を1杯なら渡さなくてよい。釣り銭の小銭を残す程度でいい
+- レストランで食事をして満足したなら、1〜3ユーロをテーブルに置く
+- ホテルのポーターやハウスキーピングには1〜2ユーロ
+- タクシーは端数を切り上げる程度でよい
 
-- ホテルのポーターやベッドメイク：20〜50バーツ程度
-- マッサージやスパ：50〜100バーツ程度
-- 高級レストラン：サービス料が含まれていなければ端数を切り上げる程度
+アメリカのようにチップを払わずとも非難はされません。
+サービスに不満がある場合はチップなしでも大丈夫です。
 
-屋台やフードコート、コンビニなどではチップは不要です。
-タクシーも基本的には不要ですが、お釣りの端数を渡す程度は喜ばれます。
-
-チップは現金で渡すのが基本です。小額紙幣を用意しておくと便利です。なお、タイでは硬貨を渡すのは失礼にあたるとされているため、必ず紙幣で渡してください。
-このあたりの感覚は国によって異なり、欧米では小銭を置いていくことも珍しくありません。
+現金が心もとない場合は、カードでもチップを渡せます。
+決済端末でチップの有無を聞かれることもあれば、金額を伝えて会計に上乗せしてもらうこともできます。
 
 ## 経費精算の準備
 
@@ -261,7 +445,7 @@ BoltやFreeNowも使えますが、まず1つ入れるならUberです。
 
 ## 水と食事
 
-フランスの水道水は飲めます。パリの水道水も水質基準を満たしているので、ペットボトルを買う必要も、氷を避ける必要もありません。
+フランスの水道水は飲めます。パリでも水質基準を満たしているので、ペットボトルを買う必要も、氷を避ける必要もありません。
 
 レストランで「Une carafe d'eau, s'il vous plaît」と頼めば、水道水が無料で出てきます。
 テーブルサービスのある飲食店には無料で飲料水を提供する義務があり、メニューなどへの明示も求められています。
@@ -283,38 +467,50 @@ BoltやFreeNowも使えますが、まず1つ入れるならUberです。
 体内時計は光でリセットされるため、ホテルに直行して寝てしまうと調整が長引きます。
 眠くても現地の就寝時刻まで起きているほうが、翌日以降が楽になります。
 
+## 犯罪からの防衛(2026-09-27追記)
+
+スリと置き引きへの備えとして、次のことを習慣にしてください。
+
+- 財布をズボンの後ろポケットに入れない
+- スマートフォンはネックストラップなどで常に身に付ける
+- リュックは使わない。背後からカッターで切られ、中身を盗まれる
+- 親切そうに話しかけてきた人に気を取られている間に、別の人が盗むという手口も多い。話しかけられても無視する
+- メトロや鉄道では、荷物を体の前に抱えて身体から離さない
+- クレジットカード2枚は同じ鞄に入れない
+- パスポートは常に携帯する。紛失に備えて、コピーをホテルの金庫などに保管するか、PDFにしてPCなどに入れておく
+
+## 語学(2026-09-27追記)
+
+基本は英語で構いませんが、ホテルなどでは最低限、次の言葉を覚えておいてください。
+
+<!-- author-approved: フランス語フレーズの訳語で、敬体は言い換えられないため -->
+<!-- textlint-disable -->
+
+- Bonjour（こんにちは）
+- Bonsoir（こんばんは）
+- Merci（ありがとう）
+- S'il vous plaît（お願いします）
+- Excusez-moi（すみません）
+
+<!-- textlint-enable -->
+
 ## その他の備え
 
 出発前に以下の準備も忘れずに行ってください。
 
-- たびレジへの登録
-  - 外務省が提供する海外旅行登録サービス
-  - 登録すると渡航先の安全情報や緊急時の連絡がメールで届く
-  - 3か月未満の短期渡航者は任意だが、登録を強く推奨
-- パスポートの残存有効期間の確認
-  - 国によっては入国時に6か月以上の残存有効期間が必要
-  - 残存有効期間が1年未満の場合は新しいパスポートへの切り替えを検討
-- パスポートと航空券のコピー
-  - 紙のコピーと、クラウドストレージにデジタルコピーの両方を用意
-  - 万が一紛失した際の再発行手続きがスムーズになる
-- 海外旅行保険の確認
-  - 会社の法人カードに付帯している場合が多いので、補償内容を確認
-  - 付帯がない場合は個別に加入を検討
-- 緊急連絡先の共有
-  - 会社の緊急連絡先、現地の日本大使館・領事館の連絡先を控えておく
-  - 家族にも滞在先ホテルや現地連絡先を伝えておく
 - 常備薬の持参
   - 普段使用している薬があれば必ず持参
   - 胃腸薬や解熱鎮痛剤もあると安心
 - 予防接種
-  - 短期の都市部出張であれば通常不要
-  - 心配な場合は出発2週間前までに渡航外来で相談
+  - 厚生労働省検疫所（FORTH）は、フランスを含む西ヨーロッパへの渡航で麻しん・風しんの予防接種の検討を勧めている
+  - 接種が1回だけの人や接種したか分からない人は、母子健康手帳で接種歴を確認し、早めに渡航外来で相談する
+  - 水痘、破傷風、インフルエンザ、ダニ媒介脳炎は、行程や年齢、免疫の状況によって検討される
 
 ## 中国への出張について
 
 最後に、中国への出張について触れておきます。
 
-初めての海外出張で中国を打診された場合、可能であれば断ることをお勧めします。
+海外出張で中国を打診された場合は、断りましょう。
 
 現在の中国は地政学的リスクが非常に高く、日本人ビジネスパーソンにとって安全とは言えない状況です。
 スパイ容疑での拘束事例も報告されており、何気ない行動が思わぬトラブルにつながる可能性があります。
@@ -322,29 +518,56 @@ BoltやFreeNowも使えますが、まず1つ入れるならUberです。
 また、インターネット規制（グレートファイアウォール）によりGoogle、LINE、Gmailなどが使えず、VPNの準備が必要になるなど、通信面でのハードルも高いです。
 決済もWeChat PayやAlipayが主流で、外国人が使うには事前準備が必要です。
 
-中国出張を避けられない場合は、会社のセキュリティ部門や法務部門に相談し、十分な対策を講じてから渡航してください。
-初心者が単独で対応するには荷が重すぎます。
+このリスクは、会社が対策を講じて担保できる種類のものではありません。
+セキュリティ部門や法務部門に相談したところで、身柄を拘束された社員を会社が取り戻せるわけではないからです。
+それでも中国出張を避けられないのなら、私はその会社を辞めることを勧めます。
+断れない1回の出張に、自分の身の安全を賭ける価値はありません。
 
 ## References
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [外務省 海外安全ホームページ](https://www.anzen.mofa.go.jp/). 「海外安全情報」
 - [在日フランス大使館](https://jp.diplomatie.gouv.fr/ja/ees-le-nouveau-systeme-europeen-de-gestion-des-frontieres-entre-en-service-le-10-avril-2026). 「ヨーロッパの新国境管理システム「EES」が2026年4月10日より運用開始」
 - [EU MAG（駐日欧州連合代表部）](https://eumag.jp/article/qa082025a/). 「出入域システム（EES）について教えてください」
 - [EU MAG（駐日欧州連合代表部）](https://eumag.jp/article/basicinfo0724a/). 「EU域内の移動の自由（シェンゲン協定）」
+- [France-Visas（フランス政府）](https://www.france-visas.gouv.fr/web/france-visas/votre-arrivee-en-france). 「Votre arrivée en France」
+- [France-Visas（フランス政府）](https://france-visas.gouv.fr/en/faq). 「Frequently asked questions」
 - [DGCCRF（フランス経済・財務省）](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/transition-ecologique-quelles-obligations-pour-les-cafes-et). 「Transition écologique : quelles obligations pour les cafés et restaurateurs ?」
+- [DGCCRF（フランス経済・財務省）](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/taxis-vtc-motos-pro-ce-quil-faut-savoir). 「Taxis, VTC, motos-pro : ce qu'il faut savoir」
+- [DGCCRF（フランス経済・財務省）](https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/pourboire). 「Pourboire」
+- [Institut CSA](https://csa.eu/news/les-francais-et-les-pourboires-2/). 「Les Français et les Pourboires」
+- [フランス経済・財務省](https://www.economie.gouv.fr/actualites/paiement-sans-contact-par-carte-bancaire-le-plafond-releve-50-euros). 「Paiement sans contact par carte bancaire : le plafond relevé à 50 euros」
+- [フランス経済・財務省](https://www.economie.gouv.fr/particuliers/mes-droits-conso/bien-consommer/paiement-sans-contact-comment-ca-fonctionne). 「Paiement sans contact : comment ça fonctionne ?」
+- [フランス経済・財務省](https://www.economie.gouv.fr/entreprises/gerer-son-entreprise-au-quotidien/gerer-un-commerce/cartes-bancaires-cheques-especes-quels-moyens-de-paiement-de-vos-clients-etes-vous). 「Cartes bancaires, chèques, espèces : quels moyens de paiement de vos clients êtes-vous obligé d'accepter ?」
+- [NTTドコモ](https://www.docomo.ne.jp/service/world/roaming/sonomama-giga/). 「世界そのままギガ」
+- [ドコモSMTBネット銀行](https://help.netbk.co.jp/faq_detail.html?id=5530). 「〔証明書の種類〕 証明書の発行方法・手数料・見本」
+- [Enedis](https://www.enedis.fr/fonctionnement-du-reseau). 「Comment fonctionne le réseau électrique ?」
+- [カシムラ](https://www.kashimura.com/goods/kaigai/plug/wp3.html). 「海外用変換プラグ Cタイプ WP-3」
+- [パナソニック](https://jpn.faq.panasonic.com/app/answers/detail/a_id/10759/). 「【メンズシェーバー】海外でも使用できますか？」
+- [mineo ユーザーサポート](https://support.mineo.jp/usqa/service/basic/area/4206846_8853.html). 「海外で電話やメール、インターネットを使うことができますか？」
+- [mineo ユーザーサポート](https://support.mineo.jp/usqa/service/basic/charge/4206857_8854.html). 「国際電話サービス／国際ローミングサービスの限度額を知りたい。」
+- [Orange Travel](https://travel.orange.com/en/sim-card-registration). 「Identity Verification」
+- [Transatel](https://www.transatel.com/news-and-insights/press-releases/ntt-communications-completes-acquisition-of-majority-stake-in-transatel-a-global-connectivity-solution-provider-for-the-mvno-and-iot-markets/). 「NTT Communications Completes Acquisition of Majority Stake in Transatel」
 - [Google ウォレット ヘルプ](https://support.google.com/wallet/answer/12059601?hl=ja). 「Google ウォレット アプリに追加したお支払い方法を管理する」
 - [税関](https://www.customs.go.jp/kaigairyoko/shinkokusho.htm). 「入国（帰国）時における「携帯品・別送品申告書」の提出」
 - [外務省](https://www.ezairyu.mofa.go.jp/tabireg/index.html). 「たびレジ（海外旅行登録）」
 - [外務省](https://www.mofa.go.jp/mofaj/toko/index.html). 「海外渡航・滞在」
+- [厚生労働省検疫所 FORTH](https://www.forth.go.jp/moreinfo/topics/useful_vaccination.html). 「海外渡航のためのワクチン（予防接種）」
 - [外務省 海外安全ホームページ](https://www.anzen.mofa.go.jp/info/pcspotinfo_2025C029.html). 「中国：反スパイ法に関する注意喚起」
 - [政府広報オンライン](https://www.gov-online.go.jp/article/201412/entry-7500.html). 「飛行機へ持ち込めないもの」
 - [日本航空](https://www.jal.co.jp/jp/ja/info/2025/other/250701/). 「機内でのモバイルバッテリーの収納・使用に関するお願い」
 - [Paris Aéroport](https://www.parisaeroport.fr/en/passengers/transport-parking/taxi/cdg). 「How to take a taxi at Paris-CDG airport?」
+- [エース](https://store.ace.jp/shop/g/g02623-01/). 「プロテカ 360G5 スーツケース 日本製 双輪 71L 02623」
+- [エース](https://store.ace.jp/shop/g/g01523-02/). 「プロテカ エアロフレックスDX2 スーツケース 日本製 71L 01523」
+- [プロテカ（エース）](https://www.proteca.jp/special/japan-premium/). 「旅の心地よさを極めた、メイド・イン・ジャパン。」
+- [プロテカ（エース）](https://www.proteca.jp/concept/warranty.php). 「製品保証について」
+- [プロテカ（エース）](https://www.proteca.jp/product/premium-care.php). 「3年間完全無償修理保証 プレミアムケア」
+- [サムソナイト](https://www.samsonite.co.jp/samsonite/c-lite/spinner69/black/ss-122860-1041.html). 「シーライト スピナー69」
+- [サムソナイト](https://www.samsonite.co.jp/guarantee.html). 「保証と修理について」
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->

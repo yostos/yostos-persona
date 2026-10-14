@@ -1,7 +1,7 @@
 +++
 title = "高中正義 - WORLD TOUR FINAL – 凱旋帰還に行ってきました"
 description = """
-高中正義さんの「WORLD TOUR FINAL – 凱旋帰還」に行ってきました。会場一体となった「TOKYO REGGIE」の大合唱に感動し、自分でも弾いてみたものをSoundCloudに上げています。
+高中正義さんの「WORLD TOUR FINAL – 凱旋帰還」に行ってきました。会場一体となった「TOKYO REGGIE」の大合唱に感動し、自分でも弾いてみたものをYouTubeに上げています。
 """
 date = 2026-05-11T10:02:46+09:00
 [taxonomies]
@@ -13,7 +13,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -28,4 +28,4 @@ local_image = "cover.webp"
 
 [^1]: 渋谷公会堂
 
-{{ youtube(id="JakrL7xwhpg") }}
+{{< youtube id="JakrL7xwhpg" />}}

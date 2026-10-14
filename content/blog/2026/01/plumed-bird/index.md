@@ -15,7 +15,7 @@ tags = ["Creative", "Guitar"]
 social_media_card = "ogp.webp"
 +++
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2253696386&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/yostos" title="Yostos" target="_blank" style="color: #cccccc; text-decoration: none;">Yostos</a> · <a href="https://soundcloud.com/yostos/plumed-bird" title="Plumed Bird" target="_blank" style="color: #cccccc; text-decoration: none;">Plumed Bird</a></div>
+{{< youtube id="qG1F1-dcovw" />}}
 
 高中正義の名盤「虹伝説THE RAINBOW GOBLINS」より「Plumed Bird」のギターカバーを録音しました。
 
@@ -30,7 +30,7 @@ social_media_card = "ogp.webp"
 特徴的です。テクニカルでありながらも、繊細なニュアンスと表現力が求められる難曲だ
 と思います。
 
-リードギターには[YAMAHA REVSTAR RSP20](/articles/2025/07/22/yamaha-revstar-rsp20)を使用しました。
+リードギターには[YAMAHA REVSTAR RSP20](@/blog/2025/07/yamaha-revstar-rsp20/index.md)を使用しました。
 オリジナルでは高中正義がYAMAHA SGを使用しており、同じYAMAHAのハムバッカー搭載ギターとしてREVSTARを使用しました。
 リフやバッキングにはFender Stratocasterを使用し、シングルコイルとハムバッカーのコントラストを出しています。
 
@@ -59,4 +59,4 @@ When playing this piece, I focused on:
 | Audio Interface  | MOTU M2                                |
 | Amp Sim          | Neural DSP Archetype Cory Wong X       |
 
-For the lead guitar, I used the [YAMAHA REVSTAR RSP20](/articles/2025/07/22/yamaha-revstar-rsp20). Since Takanaka used a YAMAHA SG in the original recording, I chose the REVSTAR as a fellow YAMAHA humbucker-equipped guitar. The Fender Stratocaster provides contrast with its single-coil pickups for the backing parts.
+For the lead guitar, I used the [YAMAHA REVSTAR RSP20](@/blog/2025/07/yamaha-revstar-rsp20/index.md). Since Takanaka used a YAMAHA SG in the original recording, I chose the REVSTAR as a fellow YAMAHA humbucker-equipped guitar. The Fender Stratocaster provides contrast with its single-coil pickups for the backing parts.

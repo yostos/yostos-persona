@@ -13,7 +13,7 @@ local_image = "cover.webp"
 
 <!-- textlint-disable -->
 
-{{ image(src="cover.webp",alt="Cover") }}
+{{< image src="cover.webp" alt="Cover" />}}
 
 <!-- textlint-enable -->
 
@@ -35,7 +35,7 @@ SG-175は短い製造期間のなかで何度か細かい仕様変更を受け�
 折角なので弾いてみました。
 音の傾向はSG-1000/2000/3000より若干甘めな印象です。
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2333741087&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/yostos" title="Yostos" target="_blank" style="color: #cccccc; text-decoration: none;">Yostos</a> · <a href="https://soundcloud.com/yostos/bay-street-fix" title="Bay Street Fix" target="_blank" style="color: #cccccc; text-decoration: none;">Bay Street Fix</a></div>
+{{< youtube id="xjL3CQGlliw" />}}
 
 ## SG-175とは
 
@@ -155,13 +155,13 @@ SG-2000/3000のTクロスメイプルのスルーネックやサスティーン�
 
 <!-- textlint-disable -->
 
-{% references() %}
+{% <references> %}
 
 - [ヤマハ エレクトリックギター カタログ（1975年）](https://guitar-catalog.com/guitar-and-amp/yamaha/1975/en_index.html). 「The World of Musical Instruments Brochures」
   - ページをマージしたダウンロード版を作成しました -> [Download](./yamaha-catalog-1975.pdf)
 - [Stephen Delft](https://www.muzines.co.uk/articles/yamaha-sg-175/6665). "Yamaha SG-175". International Musician & Recording World, October 1975
   - 日本語訳を用意しました -> [日本語訳](./delft/)
 
-{% end %}
+{% </references> %}
 
 <!-- textlint-enable -->
